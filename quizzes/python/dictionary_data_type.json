@@ -1,0 +1,117 @@
+{
+  "title": "Python Dictionary Data Type",
+  "description": "Test your knowledge of Python dictionaries: creation, access, updates, methods, and common code patterns.",
+  "time_limit": 180,
+  "questions": [
+    {
+      "question": "Which is the correct dictionary literal mapping 'a'->1 and 'b'->2?",
+      "options": [
+        "dict('a': 1, 'b': 2)",
+        "{('a', 1), ('b', 2)}",
+        "{'a': 1, 'b': 2}",
+        "['a': 1, 'b': 2]"
+      ],
+      "correct": 2,
+      "explanation": "A dictionary literal uses curly braces with key:value pairs, e.g. {'a': 1, 'b': 2}."
+    },
+    {
+      "question": "Which method returns a dynamic view of all keys in a dictionary?",
+      "options": [
+        "keys()",
+        "get_keys()",
+        "keylist()",
+        "all_keys()"
+      ],
+      "correct": 0,
+      "explanation": "dict.keys() returns a view object over the dictionary’s keys."
+    },
+    {
+      "question": "What is the output of this code?\n\nmy_dict = {'a': 1, 'b': 2}\nprint(my_dict['b'])",
+      "options": [
+        "1",
+        "'b'",
+        "Error",
+        "2"
+      ],
+      "correct": 3,
+      "explanation": "Indexing by key 'b' fetches its value 2. A KeyError would occur only if the key is missing."
+    },
+    {
+      "question": "How do you add a new key-value pair 'z': 99 to an existing dict named my_dict?",
+      "options": [
+        "my_dict.append(('z', 99))",
+        "my_dict['z'] = 99",
+        "my_dict.add('z', 99)",
+        "add(my_dict, 'z', 99)"
+      ],
+      "correct": 1,
+      "explanation": "Assignment with square brackets sets or replaces a key’s value: my_dict['z'] = 99."
+    },
+    {
+      "question": "Which method removes all items from a dictionary (but keeps the object itself)?",
+      "options": [
+        "del my_dict",
+        "pop()",
+        "clear()",
+        "remove()"
+      ],
+      "correct": 2,
+      "explanation": "clear() empties the dictionary in-place. 'del my_dict' deletes the variable, not its contents."
+    },
+    {
+      "question": "Which method removes a specific key and returns its value (optionally with a default)?",
+      "options": [
+        "pop()",
+        "discard()",
+        "remove()",
+        "clear()"
+      ],
+      "correct": 0,
+      "explanation": "pop(key[, default]) removes the key and returns its value; if missing, returns default or raises KeyError."
+    },
+    {
+      "question": "What is the output of this code?\n\nmy_dict = {'x': 10, 'y': 20}\nprint('c' in my_dict)",
+      "options": [
+        "True",
+        "None",
+        "Error",
+        "False"
+      ],
+      "correct": 3,
+      "explanation": "Membership with 'in' checks keys by default; 'c' is not a key, so it returns False."
+    },
+    {
+      "question": "Which method merges another mapping into a dictionary in place (overwriting duplicate keys)?",
+      "options": [
+        "extend()",
+        "update()",
+        "merge()",
+        "append()"
+      ],
+      "correct": 1,
+      "explanation": "update() merges key–value pairs from another dict/iterable of pairs into the target dict."
+    },
+    {
+      "question": "What is the output of this code?\n\nprint(list({'x': 1, 'y': 2}.values()))",
+      "options": [
+        "[1, 2]",
+        "(1, 2)",
+        "dict_values([1, 2])",
+        "{1, 2}"
+      ],
+      "correct": 0,
+      "explanation": "values() returns a view; wrapping with list(...) materializes it as [1, 2] in insertion order."
+    },
+    {
+      "question": "What will be printed?\n\nd = {'a': 1}\nprint(d.get('b', 5))",
+      "options": [
+        "None",
+        "Error",
+        "5",
+        "1"
+      ],
+      "correct": 2,
+      "explanation": "get(key, default) returns the default when the key is absent; here it returns 5."
+    }
+  ]
+}

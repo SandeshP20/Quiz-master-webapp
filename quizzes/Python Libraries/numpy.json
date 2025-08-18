@@ -1,0 +1,67 @@
+{
+  "title": "Python NumPy Quiz",
+  "description": "Test your knowledge of the NumPy library in Python.",
+  "time_limit": 200,
+  "questions": [
+    {
+      "question": "Which module must be imported to use NumPy in Python?",
+      "options": ["import num as np", "import numpy as np", "from numpy import *", "import numpy as nm"],
+      "correct": 1,
+      "explanation": "The standard way to import NumPy is 'import numpy as np'."
+    },
+    {
+      "question": "How do you create a NumPy array from a Python list `[1, 2, 3]`?",
+      "options": ["array([1, 2, 3])", "np.list([1, 2, 3])", "numpy([1, 2, 3])", "np.array([1, 2, 3])"],
+      "correct": 3,
+      "explanation": "The function np.array() converts a list into a NumPy array."
+    },
+    {
+      "question": "What is the shape of `np.zeros((3, 4))`?",
+      "options": ["(3,)", "(0, 0)", "(3, 4)", "(4, 3)"],
+      "correct": 2,
+      "explanation": "np.zeros((3,4)) creates an array of zeros with 3 rows and 4 columns."
+    },
+    {
+      "question": "What does `np.arange(0, 10, 2)` produce?",
+      "options": ["array([2, 4, 6, 8, 10])", "array([0, 10, 2])", "array([0, 2, 4, 6, 8])", "array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])"],
+      "correct": 2,
+      "explanation": "np.arange(0,10,2) generates values from 0 to 10 (exclusive) with step 2."
+    },
+    {
+      "question": "How can you get the data type of elements in a NumPy array `arr`?",
+      "options": ["arr.data", "arr.type", "type(arr)", "arr.dtype"],
+      "correct": 3,
+      "explanation": "The dtype attribute returns the data type of array elements."
+    },
+    {
+      "question": "Which function computes the mean of all elements in a NumPy array `arr`?",
+      "options": ["arr.mean()", "np.mean(arr)", "arr.average()", "Both A and B"],
+      "correct": 3,
+      "explanation": "Both arr.mean() and np.mean(arr) can be used to compute the mean of array elements."
+    },
+    {
+      "question": "What does `np.reshape(arr, (2, 3))` do?",
+      "options": ["Creates a new array of zeros", "Flattens arr", "Deletes arr", "Changes the shape of arr to 2 rows and 3 columns"],
+      "correct": 3,
+      "explanation": "reshape changes the shape of an array without changing its data."
+    },
+    {
+      "question": "How do you create a 3x3 identity matrix in NumPy?",
+      "options": ["np.zeros((3,3))", "np.ones((3,3))", "np.eye(3)", "np.identity(3,3)"],
+      "correct": 2,
+      "explanation": "np.eye(n) creates an n x n identity matrix."
+    },
+    {
+      "question": "Which of the following performs element-wise multiplication of arrays `a` and `b`?",
+      "options": ["np.dot(a,b)", "a * b", "a @ b", "np.multiply(a,b)"],
+      "correct": 1,
+      "explanation": "Using '*' or np.multiply(a,b) performs element-wise multiplication."
+    },
+    {
+      "question": "What will be the output of:\n```python\narr = np.array([1,2,3,4])\narr[1:3]\n```?",
+      "options": ["array([1,2])", "array([2,3])", "array([3,4])", "array([1,2,3])"],
+      "correct": 1,
+      "explanation": "Slicing arr[1:3] returns elements at index 1 and 2, i.e., [2,3]."
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "title": "SQL Subqueries",
+  "description": "Test your knowledge of subqueries in SQL",
+  "time_limit": 180,
+  "questions": [
+    {
+      "question": "What is a subquery in SQL?",
+      "options": [
+        "A query nested inside another query",
+        "A query that joins tables",
+        "A query that deletes data",
+        "A query that sorts data"
+      ],
+      "correct": 0,
+      "explanation": "A subquery is a query nested inside another SQL statement, such as SELECT, INSERT, or DELETE."
+    },
+    {
+      "question": "Where can a subquery be used?",
+      "options": [
+        "Only in the SELECT clause",
+        "Only in the FROM clause",
+        "Only in the WHERE clause",
+        "In SELECT, FROM, WHERE, and HAVING clauses"
+      ],
+      "correct": 3,
+      "explanation": "Subqueries can be used in SELECT, FROM, WHERE, and HAVING clauses."
+    },
+    {
+      "question": "What is a correlated subquery?",
+      "options": [
+        "A subquery that joins tables",
+        "A subquery that references columns from the outer query",
+        "A subquery that runs independently",
+        "A subquery that sorts data"
+      ],
+      "correct": 1,
+      "explanation": "A correlated subquery references columns from the outer query and executes once for each row processed by the outer query."
+    },
+    {
+      "question": "Which operator is used with subqueries that return a single value?",
+      "options": [
+        "ALL",
+        "IN",
+        "=",
+        "EXISTS"
+      ],
+      "correct": 2,
+      "explanation": "The '=' operator is used with subqueries that return a single value."
+    },
+    {
+      "question": "What does the EXISTS operator do?",
+      "options": [
+        "Checks if a subquery returns any rows",
+        "Checks if a value is in a list",
+        "Counts rows in a subquery",
+        "Compares two values"
+      ],
+      "correct": 0,
+      "explanation": "EXISTS checks if a subquery returns any rows and returns TRUE if it does."
+    },
+    {
+      "question": "Which clause is used to compare a value to a list returned by a subquery?",
+      "options": [
+        "IN",
+        "EXISTS",
+        "LIKE",
+        "="
+      ],
+      "correct": 0,
+      "explanation": "The IN clause compares a value to a list of values returned by a subquery."
+    },
+    {
+      "question": "What is the purpose of the ALL operator with subqueries?",
+      "options": [
+        "Sorts the subquery result",
+        "Filters duplicate rows",
+        "Returns all rows from a subquery",
+        "Compares a value to all values in a subquery result"
+      ],
+      "correct": 3,
+      "explanation": "ALL compares a value to every value in the subquery result and returns TRUE if all comparisons are true."
+    },
+    {
+      "question": "Which type of subquery returns multiple rows and columns?",
+      "options": [
+        "Correlated subquery",
+        "Scalar subquery",
+        "Inline view",
+        "Table subquery"
+      ],
+      "correct": 3,
+      "explanation": "A table subquery returns multiple rows and columns and is often used in the FROM clause."
+    },
+    {
+      "question": "What is an inline view?",
+      "options": [
+        "A subquery in the FROM clause",
+        "A subquery in the WHERE clause",
+        "A subquery in the HAVING clause",
+        "A subquery in the SELECT clause"
+      ],
+      "correct": 0,
+      "explanation": "An inline view is a subquery used in the FROM clause, treated as a temporary table."
+    },
+    {
+      "question": "Which operator is used to compare a value to any value in a subquery result?",
+      "options": [
+        "EXISTS",
+        "ANY",
+        "IN",
+        "ALL"
+      ],
+      "correct": 1,
+      "explanation": "The ANY operator compares a value to any value in the subquery result and returns TRUE if any comparison is true."
+    }
+  ]
+}

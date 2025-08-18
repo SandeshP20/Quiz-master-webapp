@@ -1,0 +1,117 @@
+{
+  "title": "SQL Functions",
+  "description": "Test your knowledge of SQL functions for data manipulation",
+  "time_limit": 180,
+  "questions": [
+    {
+      "question": "Which function returns the average value of a numeric column?",
+      "options": [
+        "SUM()",
+        "MEAN()",
+        "AVG()",
+        "AVERAGE()"
+      ],
+      "correct": 2,
+      "explanation": "AVG() calculates the average value of a numeric column."
+    },
+    {
+      "question": "What does the SUM() function do?",
+      "options": [
+        "Counts the number of rows",
+        "Adds up all values in a column",
+        "Finds the highest value",
+        "Calculates the average"
+      ],
+      "correct": 1,
+      "explanation": "SUM() adds up all the values in a numeric column."
+    },
+    {
+      "question": "Which function returns the current date?",
+      "options": [
+        "TODAY()",
+        "CURRENT_DATE",
+        "NOW()",
+        "GETDATE()"
+      ],
+      "correct": 1,
+      "explanation": "CURRENT_DATE returns the current date in SQL."
+    },
+    {
+      "question": "What does the CONCAT() function do?",
+      "options": [
+        "Splits a string",
+        "Counts characters",
+        "Adds numbers",
+        "Combines two or more strings"
+      ],
+      "correct": 3,
+      "explanation": "CONCAT() combines two or more strings into one."
+    },
+    {
+      "question": "Which function extracts a substring from a string?",
+      "options": [
+        "TRIM()",
+        "EXTRACT()",
+        "SUBSTRING()",
+        "SPLIT()"
+      ],
+      "correct": 2,
+      "explanation": "SUBSTRING() extracts a portion of a string based on specified positions."
+    },
+    {
+      "question": "What does the GROUP BY clause do?",
+      "options": [
+        "Sorts the result set",
+        "Joins tables",
+        "Groups rows with the same values into summary rows",
+        "Filters groups"
+      ],
+      "correct": 2,
+      "explanation": "GROUP BY groups rows with the same values into summary rows, often used with aggregate functions."
+    },
+    {
+      "question": "Which function returns the highest value in a column?",
+      "options": [
+        "TOP()",
+        "HIGHEST()",
+        "MAX()",
+        "MIN()"
+      ],
+      "correct": 2,
+      "explanation": "MAX() returns the highest value in a column."
+    },
+    {
+      "question": "What does the HAVING clause do?",
+      "options": [
+        "Filters rows before grouping",
+        "Filters groups after GROUP BY",
+        "Joins tables",
+        "Sorts the result set"
+      ],
+      "correct": 1,
+      "explanation": "HAVING filters groups after the GROUP BY clause is applied."
+    },
+    {
+      "question": "Which function returns the length of a string?",
+      "options": [
+        "LENGTH()",
+        "SIZE()",
+        "COUNT()",
+        "CHAR_LENGTH()"
+      ],
+      "correct": 0,
+      "explanation": "LENGTH() returns the number of characters in a string."
+    },
+    {
+      "question": "What does the COALESCE() function do?",
+      "options": [
+        "Combines strings",
+        "Counts NULL values",
+        "Returns the first non-NULL value in a list",
+        "Converts NULL to zero"
+      ],
+      "correct": 2,
+      "explanation": "COALESCE() returns the first non-NULL value from a list of arguments."
+    }
+  ]
+}

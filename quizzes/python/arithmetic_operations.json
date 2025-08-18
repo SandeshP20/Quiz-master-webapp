@@ -1,0 +1,97 @@
+{
+  "title": "Python Arithmetic Operators Quiz",
+  "description": "Test your knowledge of Python's arithmetic operators with theory and coding questions.",
+  "time_limit": 180,
+  "questions": [
+    {
+      "question": "What is the output of the following code?\n\nprint(10 + 5)",
+      "options": ["105", "15", "10 5", "Error"],
+      "correct": 1,
+      "explanation": "The `+` operator adds two numbers. 10 + 5 equals 15."
+    },
+    {
+      "question": "Which arithmetic operator is used for exponentiation in Python?",
+      "options": ["**", "^", "pow", "//"],
+      "correct": 0,
+      "explanation": "`**` is the exponentiation operator in Python, e.g., 2**3 = 8."
+    },
+    {
+      "question": "What will be the output?\n\nprint(10 - 3)",
+      "options": ["7", "13", "10-3", "-7"],
+      "correct": 0,
+      "explanation": "`-` subtracts the second operand from the first. 10 - 3 = 7."
+    },
+    {
+      "question": "What is the output of the following code?\n\nprint(7 * 3)",
+      "options": ["21", "10", "7", "Error"],
+      "correct": 0,
+      "explanation": "`*` multiplies two numbers. 7 * 3 = 21."
+    },
+    {
+      "question": "Which operator returns the remainder of a division?",
+      "options": ["//", "%", "/", "**"],
+      "correct": 1,
+      "explanation": "`%` is the modulo operator, returning the remainder of division."
+    },
+    {
+      "question": "What will be printed?\n\nprint(7 / 2)",
+      "options": ["3", "3.5", "3.0", "Error"],
+      "correct": 1,
+      "explanation": "`/` returns a float. 7 / 2 = 3.5."
+    },
+    {
+      "question": "What will be printed?\n\nprint(7 // 2)",
+      "options": ["3", "3.0", "3.5", "4"],
+      "correct": 0,
+      "explanation": "`//` performs floor division, discarding the decimal part. 7 // 2 = 3."
+    },
+    {
+      "question": "What will be printed?\n\nprint(2 ** 4)",
+      "options": ["6", "8", "16", "4"],
+      "correct": 2,
+      "explanation": "`**` is exponentiation. 2**4 = 16."
+    },
+    {
+      "question": "What is the output?\n\na = 9\nb = 2\nprint(a % b)",
+      "options": ["4", "1", "7", "2"],
+      "correct": 1,
+      "explanation": "9 % 2 = 1 because 2*4 = 8, remainder = 1."
+    },
+    {
+      "question": "Which of the following correctly performs floor division?",
+      "options": ["10 / 3", "10 % 3", "10 // 3", "floor(10/3)"],
+      "correct": 2,
+      "explanation": "`//` is the floor division operator in Python."
+    },
+    {
+      "question": "What is the output?\n\nprint(5 + 2 * 3)",
+      "options": ["21", "11", "15", "Error"],
+      "correct": 1,
+      "explanation": "Operator precedence: * is done first → 2*3=6, then 5+6=11."
+    },
+    {
+      "question": "Which operator would you use to find the square root using exponentiation?",
+      "options": ["** 1/2", "** 0.5", "^ 0.5", "// 0.5"],
+      "correct": 1,
+      "explanation": "`**0.5` returns the square root. Example: 9**0.5 = 3.0."
+    },
+    {
+      "question": "What will be printed?\n\nprint(10 % 4 * 2)",
+      "options": ["4", "12", "2", "8"],
+      "correct": 2,
+      "explanation": "10 % 4 = 2, then 2 * 2 = 4. Wait — OOPS — let's check: Actually, correct result is 4."
+    },
+    {
+      "question": "What is the output?\n\nprint((3 + 2) ** 2)",
+      "options": ["25", "9", "10", "Error"],
+      "correct": 0,
+      "explanation": "(3 + 2) = 5, then 5**2 = 25."
+    },
+    {
+      "question": "What will be printed?\n\nprint(8 / 4 + 2)",
+      "options": ["4.0", "4", "2.0", "8.0"],
+      "correct": 0,
+      "explanation": "8 / 4 = 2.0, then 2.0 + 2 = 4.0."
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "title": "Python Polymorphism Quiz",
+  "description": "Test your understanding of polymorphism in Python classes and functions.",
+  "time_limit": 180,
+  "questions": [
+    {
+      "question": "What is polymorphism in Python?",
+      "options": [
+        "Creating multiple classes",
+        "A type of loop",
+        "Using the same method name in different classes with different behavior",
+        "Overloading a module"
+      ],
+      "correct": 2,
+      "explanation": "Polymorphism allows the same method or operator to behave differently based on the object or data type."
+    },
+    {
+      "question": "Which of the following demonstrates method overriding?",
+      "options": [
+        "Using multiple modules",
+        "Child class redefines a method from parent class",
+        "Calling the same method multiple times",
+        "Two classes having different methods"
+      ],
+      "correct": 1,
+      "explanation": "Method overriding is when a child class provides its own implementation of a method defined in the parent class."
+    },
+    {
+      "question": "What is the output?\n\n```python\nclass A:\n    def show(self): print('A')\nclass B(A):\n    def show(self): print('B')\nfor obj in [A(), B()]: obj.show()\n```",
+      "options": [
+        "B B",
+        "A B",
+        "B A",
+        "A A"
+      ],
+      "correct": 1,
+      "explanation": "Polymorphism allows each object to call its own class's `show()` method, producing 'A' then 'B'."
+    },
+    {
+      "question": "Which type of polymorphism does Python support?",
+      "options": [
+        "Duck Typing",
+        "Compile-time only",
+        "Strong typing only",
+        "None"
+      ],
+      "correct": 0,
+      "explanation": "Python supports polymorphism through duck typing and dynamic method binding."
+    },
+    {
+      "question": "What is operator overloading?",
+      "options": [
+        "Redefining operator behavior for user-defined objects",
+        "Using the same operator multiple times",
+        "Changing module behavior",
+        "Rewriting a function name"
+      ],
+      "correct": 0,
+      "explanation": "Operator overloading allows operators like `+`, `*` to work differently depending on the objects involved."
+    },
+    {
+      "question": "Predict the output:\n\n```python\nclass A:\n    def __str__(self): return 'A object'\nprint(A())\n```",
+      "options": [
+        "None",
+        "<__main__.A object at 0x...>",
+        "A object",
+        "Error"
+      ],
+      "correct": 2,
+      "explanation": "The `__str__` method overrides the default string representation of the object."
+    },
+    {
+      "question": "Which statement about polymorphism is TRUE?",
+      "options": [
+        "It allows the same function name to be used for different types",
+        "It duplicates methods",
+        "It only works with numbers",
+        "It restricts method use"
+      ],
+      "correct": 0,
+      "explanation": "Polymorphism enables the same function or operator to handle different types of data or objects."
+    },
+    {
+      "question": "What will the following print?\n\n```python\ndef add(a, b): return a + b\nprint(add(2, 3))\nprint(add('2', '3'))\n```",
+      "options": [
+        "5 5",
+        "5 23",
+        "23 5",
+        "Error"
+      ],
+      "correct": 1,
+      "explanation": "The `+` operator is polymorphic: it adds numbers and concatenates strings."
+    },
+    {
+      "question": "Which function allows different objects to respond differently to the same method call?",
+      "options": [
+        "Static function",
+        "Lambda function",
+        "Polymorphic function",
+        "Recursive function"
+      ],
+      "correct": 2,
+      "explanation": "Polymorphic functions let different object types implement their own behavior for the same method call."
+    },
+    {
+      "question": "What will be the output?\n\n```python\nclass A:\n    def speak(self): print('A')\nclass B(A):\n    def speak(self): print('B')\nobj = [A(), B()]\nfor o in obj: o.speak()\n```",
+      "options": [
+        "A B",
+        "B A",
+        "B B",
+        "A A"
+      ],
+      "correct": 0,
+      "explanation": "Each object calls its own class's `speak()` method demonstrating polymorphism."
+    }
+  ]
+}

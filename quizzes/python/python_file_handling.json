@@ -1,0 +1,117 @@
+{
+  "title": "Python File Handling",
+  "description": "Test your knowledge of reading and writing files in Python",
+  "time_limit": 180,
+  "questions": [
+    {
+      "question": "How do you move the file pointer to the beginning of the file?",
+      "options": [
+        "file.seek(0)",
+        "file.start()",
+        "file.begin()",
+        "file.reset()"
+      ],
+      "correct": 0,
+      "explanation": "The `seek(0)` method moves the file pointer to the beginning of the file."
+    },
+    {
+      "question": "Which of the following is NOT a valid file mode?",
+      "options": [
+        "a",
+        "w",
+        "x+",
+        "r"
+      ],
+      "correct": 2,
+      "explanation": "'x+' is not a valid file mode. Valid modes include 'r', 'w', 'a', and their variants."
+    },
+    {
+      "question": "What is the default mode for `open()` if not specified?",
+      "options": [
+        "r",
+        "a",
+        "x",
+        "w"
+      ],
+      "correct": 0,
+      "explanation": "The default mode for `open()` is 'r' (read mode)."
+    },
+    {
+      "question": "Which method writes a list of strings to a file?",
+      "options": [
+        "writelines()",
+        "append()",
+        "write()",
+        "insert()"
+      ],
+      "correct": 0,
+      "explanation": "The `writelines()` method writes a list of strings to the file."
+    },
+    {
+      "question": "What is the output of `open('file.txt', 'w')` if 'file.txt' does not exist?",
+      "options": [
+        "Opens in read mode",
+        "Does nothing",
+        "Raises an error",
+        "Creates a new file"
+      ],
+      "correct": 3,
+      "explanation": "The 'w' mode creates a new file if it does not exist."
+    },
+    {
+      "question": "What is the output of `file.tell()`?",
+      "options": [
+        "File name",
+        "Current file pointer position",
+        "File content",
+        "File size"
+      ],
+      "correct": 1,
+      "explanation": "The `tell()` method returns the current position of the file pointer."
+    },
+    {
+      "question": "How do you close a file object `f`?",
+      "options": [
+        "f.exit()",
+        "close(f)",
+        "end f",
+        "f.close()"
+      ],
+      "correct": 3,
+      "explanation": "The `close()` method is called on the file object to close it."
+    },
+    {
+      "question": "Which mode opens a file for both reading and writing?",
+      "options": [
+        "r",
+        "w",
+        "a",
+        "r+"
+      ],
+      "correct": 3,
+      "explanation": "The 'r+' mode opens a file for both reading and writing."
+    },
+    {
+      "question": "Which method reads the entire content of a file as a string?",
+      "options": [
+        "readlines()",
+        "read()",
+        "readline()",
+        "scan()"
+      ],
+      "correct": 1,
+      "explanation": "The `read()` method reads the entire content of the file as a single string."
+    },
+    {
+      "question": "What does the `with` statement do when working with files?",
+      "options": [
+        "Deletes the file",
+        "Opens the file in write mode",
+        "Reads the file line by line",
+        "Automatically closes the file after the block"
+      ],
+      "correct": 3,
+      "explanation": "The `with` statement ensures the file is automatically closed after the block of code is executed."
+    }
+  ]
+}

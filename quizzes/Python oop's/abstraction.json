@@ -1,0 +1,117 @@
+{
+  "title": "Python Abstraction Quiz",
+  "description": "Test your understanding of abstraction in Python classes and methods.",
+  "time_limit": 180,
+  "questions": [
+    {
+      "question": "What is abstraction in Python OOP?",
+      "options": [
+        "Using private variables only",
+        "Creating multiple classes",
+        "Hiding implementation details and showing only functionality",
+        "Calling multiple methods"
+      ],
+      "correct": 2,
+      "explanation": "Abstraction hides the internal details and shows only the necessary functionality to the user."
+    },
+    {
+      "question": "Which module provides support for abstract classes in Python?",
+      "options": [
+        "functools",
+        "abc",
+        "types",
+        "abstract"
+      ],
+      "correct": 1,
+      "explanation": "The `abc` module allows you to define abstract base classes and abstract methods."
+    },
+    {
+      "question": "What keyword is used to declare an abstract method in Python?",
+      "options": [
+        "abstractmethod",
+        "virtual",
+        "abstract",
+        "def"
+      ],
+      "correct": 0,
+      "explanation": "The `@abstractmethod` decorator from the `abc` module declares a method as abstract."
+    },
+    {
+      "question": "Which of the following is TRUE about abstract classes?",
+      "options": [
+        "They are the same as interfaces",
+        "They can be instantiated like normal classes",
+        "They cannot be instantiated directly",
+        "They only contain variables"
+      ],
+      "correct": 2,
+      "explanation": "Abstract classes cannot be instantiated directly and are meant to be subclassed."
+    },
+    {
+      "question": "What will happen if a subclass does not implement all abstract methods?",
+      "options": [
+        "It becomes a polymorphic method",
+        "It cannot be instantiated",
+        "Python ignores missing methods",
+        "It will run without errors"
+      ],
+      "correct": 1,
+      "explanation": "Subclasses must implement all abstract methods to be instantiable."
+    },
+    {
+      "question": "Predict the output:\n\n```python\nfrom abc import ABC, abstractmethod\nclass A(ABC):\n    @abstractmethod\n    def show(self): pass\nclass B(A):\n    def show(self): print('B')\nB().show()\n```",
+      "options": [
+        "ABC object",
+        "Error",
+        "B",
+        "None"
+      ],
+      "correct": 2,
+      "explanation": "Subclass B implements the abstract method `show()`, so calling `B().show()` prints 'B'."
+    },
+    {
+      "question": "Which of the following is an advantage of abstraction?",
+      "options": [
+        "Reduces code complexity",
+        "Removes inheritance",
+        "Slows down execution",
+        "Increases errors"
+      ],
+      "correct": 0,
+      "explanation": "Abstraction reduces code complexity by hiding implementation details and exposing only essential features."
+    },
+    {
+      "question": "Can an abstract class contain non-abstract methods?",
+      "options": [
+        "Only if it has no abstract methods",
+        "Yes",
+        "No",
+        "Only in Python 3"
+      ],
+      "correct": 1,
+      "explanation": "Abstract classes can have both abstract and concrete (non-abstract) methods."
+    },
+    {
+      "question": "What is the purpose of using abstract classes?",
+      "options": [
+        "To prevent inheritance",
+        "To run code faster",
+        "To provide a template for subclasses",
+        "To replace normal classes"
+      ],
+      "correct": 2,
+      "explanation": "Abstract classes provide a blueprint for subclasses, enforcing implementation of abstract methods."
+    },
+    {
+      "question": "Which statement is correct about abstract methods?",
+      "options": [
+        "They are optional to override",
+        "They have no implementation in the abstract class",
+        "They always return 0",
+        "They can be instantiated"
+      ],
+      "correct": 1,
+      "explanation": "Abstract methods are declared in the abstract class without implementation and must be overridden in subclasses."
+    }
+  ]
+}

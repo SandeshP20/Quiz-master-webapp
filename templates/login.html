@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Master - Login</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-tabs">
+            <div class="tab active" id="login-tab">Login</div>
+            <div class="tab" id="register-tab">Register</div>
+        </div>
+
+        <!-- Login Form -->
+        <div class="auth-form" id="login-form">
+            <h1><i class="fas fa-brain"></i> Quiz Master</h1>
+            {% if error %}
+            <div class="error">{{ error }}</div>
+            {% endif %}
+            <form method="POST" action="/login">
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="username" placeholder="Username" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="auth-btn">Login</button>
+            </form>
+            <p style="margin-top:10px;text-align:center;">
+                <a href="#" id="forgot-password-link">Forgot Password?</a>
+            </p>
+        </div>
+
+        <!-- Registration Form -->
+        <div class="auth-form" id="register-form" style="display:none;">
+            <h1><i class="fas fa-brain"></i> Quiz Master</h1>
+            {% if register_error %}
+            <div class="error">{{ register_error }}</div>
+            {% endif %}
+            <form method="POST" action="/register">
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="username" placeholder="Username" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" name="email" placeholder="Email (optional)">
+                </div>
+                <!-- Optional security question for password recovery -->
+                <div class="input-group">
+                    <i class="fas fa-question-circle"></i>
+                    <input type="text" name="security_question" placeholder="Security Question (optional)">
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-key"></i>
+                    <input type="text" name="security_answer" placeholder="Security Answer (optional)">
+                </div>
+                <button type="submit" class="auth-btn">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Forgot Password Modal -->
+    <div id="forgot-password-modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close" id="forgot-close">&times;</span>
+            <h2>Reset Your Password</h2>
+            <div id="forgot-step1">
+                <p>Enter your username or email to begin.</p>
+                <input type="text" id="fp-username-email" placeholder="Username or Email" style="width:100%;padding:8px;">
+                <button id="fp-start-btn" class="auth-btn" style="margin-top:10px;">Next</button>
+            </div>
+            <div id="forgot-step2" style="display:none;">
+                <p id="fp-security-question"></p>
+                <input type="text" id="fp-security-answer" placeholder="Your Answer" style="width:100%;padding:8px;">
+                <button id="fp-answer-btn" class="auth-btn" style="margin-top:10px;">Verify Answer</button>
+            </div>
+            <div id="forgot-step3" style="display:none;">
+                <p>Enter the reset code you received and your new password.</p>
+                <input type="text" id="fp-reset-code" placeholder="Reset Code" style="width:100%;padding:8px;margin-bottom:8px;">
+                <input type="password" id="fp-new-password" placeholder="New Password" style="width:100%;padding:8px;">
+                <button id="fp-reset-btn" class="auth-btn" style="margin-top:10px;">Reset Password</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Tab switching
+        document.getElementById('login-tab').addEventListener('click', () => {
+            document.getElementById('login-form').style.display = 'block';
+            document.getElementById('register-form').style.display = 'none';
+            document.getElementById('login-tab').classList.add('active');
+            document.getElementById('register-tab').classList.remove('active');
+        });
+
+        document.getElementById('register-tab').addEventListener('click', () => {
+            document.getElementById('register-form').style.display = 'block';
+            document.getElementById('login-form').style.display = 'none';
+            document.getElementById('register-tab').classList.add('active');
+            document.getElementById('login-tab').classList.remove('active');
+        });
+
+        // Show register form if error exists
+        window.addEventListener('DOMContentLoaded', () => {
+            const registerError = "{{ register_error if register_error else '' }}";
+            if (registerError) {
+                document.getElementById('register-tab').click();
+            }
+        });
+
+        // Forgot Password Modal logic
+        const modal = document.getElementById('forgot-password-modal');
+        document.getElementById('forgot-password-link').onclick = () => {
+            modal.style.display = 'block';
+        };
+        document.getElementById('forgot-close').onclick = () => {
+            modal.style.display = 'none';
+            resetForgotModal();
+        };
+        window.onclick = (event) => {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+                resetForgotModal();
+            }
+        };
+
+        function resetForgotModal() {
+            document.getElementById('forgot-step1').style.display = 'block';
+            document.getElementById('forgot-step2').style.display = 'none';
+            document.getElementById('forgot-step3').style.display = 'none';
+            document.getElementById('fp-username-email').value = '';
+            document.getElementById('fp-security-answer').value = '';
+            document.getElementById('fp-reset-code').value = '';
+            document.getElementById('fp-new-password').value = '';
+        }
+
+        let fpUsername = '';
+
+        document.getElementById('fp-start-btn').onclick = () => {
+            const val = document.getElementById('fp-username-email').value.trim();
+            if (!val) return alert("Enter username or email");
+
+            fetch('/forgot_password', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ username_or_email: val })
+            }).then(r => r.json()).then(data => {
+                if (data.error) return alert(data.error);
+
+                fpUsername = data.username || val;
+                if (data.security_question) {
+                    document.getElementById('fp-security-question').innerText = data.security_question;
+                    document.getElementById('forgot-step1').style.display = 'none';
+                    document.getElementById('forgot-step2').style.display = 'block';
+                } else if (data.reset_code) {
+                    alert("Your reset code: " + data.reset_code);
+                    document.getElementById('forgot-step1').style.display = 'none';
+                    document.getElementById('forgot-step3').style.display = 'block';
+                }
+            });
+        };
+
+        document.getElementById('fp-answer-btn').onclick = () => {
+            const ans = document.getElementById('fp-security-answer').value.trim();
+            if (!ans) return alert("Enter answer");
+
+            fetch('/verify_security_answer', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ username: fpUsername, security_answer: ans })
+            }).then(r => r.json()).then(data => {
+                if (data.error) return alert(data.error);
+                alert("Your reset code: " + data.reset_code);
+                document.getElementById('forgot-step2').style.display = 'none';
+                document.getElementById('forgot-step3').style.display = 'block';
+            });
+        };
+
+        document.getElementById('fp-reset-btn').onclick = () => {
+            const code = document.getElementById('fp-reset-code').value.trim();
+            const newpass = document.getElementById('fp-new-password').value.trim();
+            if (!code || !newpass) return alert("Enter reset code and new password");
+
+            fetch('/change_password', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ username: fpUsername, reset_code: code, new_password: newpass })
+            }).then(r => r.json()).then(data => {
+                if (data.error) return alert(data.error);
+                alert("Password reset successful. You can now log in.");
+                modal.style.display = 'none';
+                resetForgotModal();
+            });
+        };
+    </script>
+</body>
+</html>

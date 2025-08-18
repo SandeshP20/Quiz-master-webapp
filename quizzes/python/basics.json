@@ -1,0 +1,19 @@
+{
+  "title": "Python Basics",
+  "description": "Test your knowledge of Python fundamentals",
+  "time_limit": 300,
+  "questions": [
+    {
+      "question": "Which keyword is used to define a function in Python?",
+      "options": ["func", "def", "function", "define"],
+      "correct": 1,
+      "explanation": "The 'def' keyword is used to define functions in Python."
+    },
+    {
+      "question": "What is the output of `print(3 * '7')`?",
+      "options": ["21", "777", "TypeError", "37"],
+      "correct": 1,
+      "explanation": "Multiplying a string repeats it (e.g., '7' * 3 = '777')."
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "title": "Python Exception Handling",
+  "description": "Test your knowledge of how to handle and manage errors in Python.",
+  "time_limit": 180,
+  "questions": [
+    {
+      "question": "What is the purpose of the `try` block in Python?",
+      "options": [
+        "To define a function that will handle errors.",
+        "To enclose code that might cause an exception to be raised.",
+        "To declare a variable that can store an exception.",
+        "To close a file after an operation, regardless of errors."
+      ],
+      "correct": 1,
+      "explanation": "The `try` block is used to enclose the code segment where a potential exception might occur, allowing it to be caught and handled."
+    },
+    {
+      "question": "Which block is guaranteed to execute, whether an exception occurs or not?",
+      "options": [
+        "`try`",
+        "`except`",
+        "`else`",
+        "`finally`"
+      ],
+      "correct": 3,
+      "explanation": "The `finally` block is designed to always execute, making it ideal for cleanup code such as closing files or network connections."
+    },
+    {
+      "question": "What is the correct syntax for handling multiple specific exceptions?",
+      "options": [
+        "`except (ValueError, TypeError):`",
+        "`except ValueError, TypeError:`",
+        "`except ValueError, except TypeError:`",
+        "`except ValueError and TypeError:`"
+      ],
+      "correct": 0,
+      "explanation": "This syntax is correct for catching multiple exceptions with a single `except` block by listing them in a tuple."
+    },
+    {
+      "question": "What will be printed by the following code if the user enters `0`?\n\n```python\ntry:\n    x = 10\n    y = int(input(\"Enter a number: \"))\n    z = x / y\nexcept ZeroDivisionError:\n    print(\"Error: Division by zero\")\nexcept ValueError:\n    print(\"Error: Invalid input\")\nelse:\n    print(\"Result is:\", z)\nfinally:\n    print(\"Execution complete.\")\n```",
+      "options": [
+        "The program will crash with an error.",
+        "Error: Division by zero",
+        "Result is: 10.0\nExecution complete.",
+        "Error: Division by zero\nExecution complete."
+      ],
+      "correct": 3,
+      "explanation": "Entering `0` will cause a `ZeroDivisionError`, and the `except` block will handle this exception by printing its message. The `finally` block will then also execute."
+    },
+    {
+      "question": "What happens if a `NameError` occurs in the `try` block, but the `except` block is only for `ValueError`?",
+      "options": [
+        "The `finally` block will not execute.",
+        "The `except` block will handle the error gracefully.",
+        "The `NameError` will propagate and crash the program.",
+        "The `else` block will execute."
+      ],
+      "correct": 2,
+      "explanation": "Since the `except` block does not specify `NameError`, the exception will not be caught and will cause the program to crash."
+    },
+    {
+      "question": "When is the `else` block in a `try...except...else` structure executed?",
+      "options": [
+        "When the `except` block is executed.",
+        "When the code in the `try` block runs without any exceptions.",
+        "After the `finally` block is executed.",
+        "Every time, regardless of whether an exception occurs."
+      ],
+      "correct": 1,
+      "explanation": "The `else` block is executed only when the code inside the `try` block is completed successfully without raising an exception."
+    },
+    {
+      "question": "What is the purpose of the `raise` statement?",
+      "options": [
+        "To handle a raised exception.",
+        "To define a new custom exception type.",
+        "To stop the program execution gracefully.",
+        "To manually trigger an exception."
+      ],
+      "correct": 3,
+      "explanation": "The `raise` statement is used to explicitly raise an exception at a specific point in your code, which can be a new or a caught exception."
+    },
+    {
+      "question": "How can you create a custom exception in Python?",
+      "options": [
+        "By using the `raise` keyword followed by a new class name.",
+        "By subclassing the built-in `Exception` class.",
+        "By using the `try...except` block with a custom message.",
+        "By calling a special `create_exception()` function."
+      ],
+      "correct": 1,
+      "explanation": "Custom exceptions are created by defining a new class that inherits from the base `Exception` class or a more specific exception class."
+    },
+    {
+      "question": "What is the purpose of the `as` keyword in an `except` block?",
+      "options": [
+        "To rename the exception type for clarity.",
+        "To declare a new variable to hold the exception object.",
+        "To specify the type of error that will be handled.",
+        "To conditionally execute the `except` block."
+      ],
+      "correct": 1,
+      "explanation": "The `as` keyword is used to assign the raised exception object to a variable, allowing you to access its details within the `except` block."
+    }
+  ]
+}

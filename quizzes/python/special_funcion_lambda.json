@@ -1,0 +1,117 @@
+{
+  "title": "Python Special Functions Quiz",
+  "description": "Test your understanding of Python's lambda functions, map, filter, and reduce.",
+  "time_limit": 200,
+  "questions": [
+    {
+      "question": "What is the correct syntax for a lambda function that adds 10 to a number `x`?",
+      "options": [
+        "lambda x => x + 10",
+        "add = lambda x { x + 10 }",
+        "lambda x: x + 10",
+        "lambda(x) x + 10"
+      ],
+      "answer": 2,
+      "explanation": "The correct syntax is `lambda x: x + 10`. Lambda functions consist of the `lambda` keyword, arguments, a colon, and a single expression."
+    },
+    {
+      "question": "Which of the following will output `[1, 4, 9, 16]` using `map()`?",
+      "options": [
+        "map(lambda x: x**2, [1, 2, 3, 4])",
+        "list(map(lambda x: x**2, [1, 2, 3, 4]))",
+        "list(map(x**2, [1, 2, 3, 4]))",
+        "filter(lambda x: x**2, [1, 2, 3, 4])"
+      ],
+      "answer": 1,
+      "explanation": "`map()` applies the lambda function to each element. Wrapping it in `list()` converts the map object to a list: `[1, 4, 9, 16]`."
+    },
+    {
+      "question": "What will be the output of:\n\n```python\nlist(filter(lambda x: x % 2 == 0, [1, 2, 3, 4, 5, 6]))\n```",
+      "options": [
+        "[1, 2, 3, 4, 5, 6]",
+        "[0, 2, 4, 6]",
+        "[2, 4, 6]",
+        "[1, 3, 5]"
+      ],
+      "answer": 2,
+      "explanation": "`filter()` selects elements where the lambda returns True. Here, it filters even numbers: `[2, 4, 6]`."
+    },
+    {
+      "question": "Which module provides the `reduce()` function in Python?",
+      "options": [
+        "collections",
+        "functools",
+        "math",
+        "itertools"
+      ],
+      "answer": 1,
+      "explanation": "`reduce()` is part of the `functools` module in Python 3."
+    },
+    {
+      "question": "What will be the output of:\n\n```python\nfrom functools import reduce\nreduce(lambda x, y: x + y, [1, 2, 3, 4])\n```",
+      "options": [
+        "[1, 2, 3, 4]",
+        "Error",
+        "10",
+        "24"
+      ],
+      "answer": 2,
+      "explanation": "`reduce()` applies the lambda cumulatively: 1+2=3, 3+3=6, 6+4=10."
+    },
+    {
+      "question": "Which statement about `lambda` functions is TRUE?",
+      "options": [
+        "They always require the `return` keyword.",
+        "They are slower than normal functions.",
+        "They can have any number of arguments but only one expression.",
+        "They can contain multiple statements."
+      ],
+      "answer": 2,
+      "explanation": "Lambda functions can take multiple arguments but only a single expression, and they do not require `return`."
+    },
+    {
+      "question": "What will be the output of:\n\n```python\nnums = [1, 2, 3, 4]\nlist(map(lambda x: x * 2, nums))\n```",
+      "options": [
+        "[2, 4, 6, 8]",
+        "[1, 2, 3, 4]",
+        "Error",
+        "[1, 4, 9, 16]"
+      ],
+      "answer": 0,
+      "explanation": "`map()` multiplies each element by 2, giving `[2, 4, 6, 8]`."
+    },
+    {
+      "question": "Which function is best suited to **filter out** unwanted elements from a sequence?",
+      "options": [
+        "lambda()",
+        "map()",
+        "reduce()",
+        "filter()"
+      ],
+      "answer": 3,
+      "explanation": "`filter()` is used to select elements that satisfy a condition."
+    },
+    {
+      "question": "What will be the result of:\n\n```python\nfrom functools import reduce\nreduce(lambda a, b: a if a > b else b, [3, 1, 4, 2])\n```",
+      "options": [
+        "4",
+        "1",
+        "[3, 1, 4, 2]",
+        "3"
+      ],
+      "answer": 0,
+      "explanation": "`reduce()` compares elements pairwise and keeps the largest, resulting in `4`."
+    },
+    {
+      "question": "Which of the following best describes `map()`?",
+      "options": [
+        "Combines all elements into a single value.",
+        "Filters elements based on a condition.",
+        "Creates anonymous functions.",
+        "Applies a given function to each item in an iterable and returns a map object."
+      ],
+      "answer": 3,
+      "explanation": "`map()` applies a function to each item in an iterable and returns a map object (lazy evaluation)."
+    }
+  ]
+}

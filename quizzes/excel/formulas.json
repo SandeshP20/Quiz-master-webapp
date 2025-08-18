@@ -1,0 +1,29 @@
+{
+  "title": "Excel Formulas",
+  "description": "Test your knowledge of common Excel functions",
+  "time_limit": 180,
+  "questions": [
+    {
+      "question": "Which formula sums values in cells A1 to A10?",
+      "options": [
+        "=SUM(A1:A10)",
+        "=TOTAL(A1:A10)",
+        "=ADD(A1+A10)",
+        "=A1+A10"
+      ],
+      "correct": 0,
+      "explanation": "SUM() adds all values in a range."
+    },
+    {
+      "question": "What does VLOOKUP do?",
+      "options": [
+        "Looks up values vertically",
+        "Checks for duplicates",
+        "Formats cells",
+        "Creates charts"
+      ],
+      "correct": 0,
+      "explanation": "VLOOKUP searches for a value in the first column of a range."
+    }
+  ]
+}

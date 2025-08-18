@@ -1,0 +1,67 @@
+{
+  "title": "Python Decision Making Quiz",
+  "description": "Test your understanding of Python decision-making statements: if, if-else, and nested if.",
+  "time_limit": 180,
+  "questions": [
+    {
+      "question": "What will be printed?\n\nx = 7\nif x > 5:\n    print('Greater')\nelse:\n    print('Smaller')",
+      "options": ["Smaller", "Greater", "7", "Error"],
+      "correct": 1,
+      "explanation": "x=7 is greater than 5, so the if block executes and prints 'Greater'."
+    },
+    {
+      "question": "What is the output?\n\nx = 10\nif x % 2 == 0:\n    print('Even')\nelse:\n    print('Odd')",
+      "options": ["Odd", "10", "Even", "Error"],
+      "correct": 2,
+      "explanation": "x=10 is divisible by 2, so the if block executes and prints 'Even'."
+    },
+    {
+      "question": "What does the following code print?\n\nx = 5\ny = 8\nif x > 3 and y > 10:\n    print('Yes')\nelse:\n    print('No')",
+      "options": ["Yes", "5", "No", "Error"],
+      "correct": 2,
+      "explanation": "x > 3 is True but y > 10 is False; the condition is not fully True, so else executes and prints 'No'."
+    },
+    {
+      "question": "What will this code output?\n\nx = 3\nif x > 5:\n    print('A')\nelif x == 3:\n    print('B')\nelse:\n    print('C')",
+      "options": ["A", "C", "3", "B"],
+      "correct": 3,
+      "explanation": "x == 3 matches the elif condition, so it prints 'B'."
+    },
+    {
+      "question": "Predict the output:\n\nx = 2\ny = 4\nif x > y:\n    print('X')\nelse:\n    if y % 2 == 0:\n        print('Y is even')\n    else:\n        print('Y is odd')",
+      "options": ["X", "Y is odd", "2", "Y is even"],
+      "correct": 3,
+      "explanation": "x > y is False, then nested if checks y % 2 == 0, which is True, so it prints 'Y is even'."
+    },
+    {
+      "question": "What does this code print?\n\nx = 0\nif x:\n    print('True')\nelse:\n    print('False')",
+      "options": ["False", "True", "0", "Error"],
+      "correct": 0,
+      "explanation": "0 is considered False in Python, so the else block executes and prints 'False'."
+    },
+    {
+      "question": "What will be the output?\n\nx = 9\nif x < 5:\n    print('Small')\nelif x < 10:\n    print('Medium')\nelse:\n    print('Large')",
+      "options": ["Small", "Medium", "Large", "9"],
+      "correct": 1,
+      "explanation": "x=9 satisfies x<10 in the elif block, so it prints 'Medium'."
+    },
+    {
+      "question": "Predict the result:\n\nx = 3\ny = 4\nif x > y:\n    print('X')\nelif x == y:\n    print('Equal')\nelse:\n    print('Y is bigger')",
+      "options": ["X", "Equal", "Y is bigger", "Error"],
+      "correct": 2,
+      "explanation": "x=3 and y=4, x>y is False, x==y is False, so else executes and prints 'Y is bigger'."
+    },
+    {
+      "question": "What is the output of:\n\nx = 10\nif x >= 10:\n    if x == 10:\n        print('Ten')\n    else:\n        print('More than ten')",
+      "options": ["Ten", "More than ten", "10", "Error"],
+      "correct": 0,
+      "explanation": "x >= 10 is True, then nested if x == 10 is True, so it prints 'Ten'."
+    },
+    {
+      "question": "What does the following code print?\n\nx = 7\nif x < 5 or x > 10:\n    print('Out')\nelse:\n    print('In')",
+      "options": ["Out", "7", "Error", "In"],
+      "correct": 3,
+      "explanation": "x=7 does not satisfy x<5 or x>10, so else block executes and prints 'In'."
+    }
+  ]
+}

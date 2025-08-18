@@ -1,0 +1,24 @@
+{
+  "title": "SQL Basic Queries",
+  "description": "Test your knowledge of SELECT statements",
+  "time_limit": 240,
+  "questions": [
+    {
+      "question": "Which SQL clause filters records?",
+      "options": ["FILTER BY", "HAVING", "WHERE", "CHECK"],
+      "correct": 2,
+      "explanation": "The WHERE clause filters records based on conditions."
+    },
+    {
+      "question": "What does GROUP BY do?",
+      "options": [
+        "Groups rows by unique values",
+        "Filters duplicate rows",
+        "Sorts results alphabetically",
+        "Joins tables"
+      ],
+      "correct": 0,
+      "explanation": "GROUP BY aggregates rows with identical values."
+    }
+  ]
+}

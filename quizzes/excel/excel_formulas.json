@@ -1,0 +1,117 @@
+{
+  "title": "Excel Formulas",
+  "description": "Test your knowledge of common Excel functions",
+  "time_limit": 180,
+  "questions": [
+    {
+      "question": "Which formula sums values in cells A1 to A10?",
+      "options": [
+        "=TOTAL(A1:A10)",
+        "=SUM(A1:A10)",
+        "=ADD(A1+A10)",
+        "=A1+A10"
+      ],
+      "correct": 1,
+      "explanation": "SUM() adds all values in a range."
+    },
+    {
+      "question": "What does VLOOKUP do?",
+      "options": [
+        "Looks up values vertically",
+        "Creates charts",
+        "Checks for duplicates",
+        "Formats cells"
+      ],
+      "correct": 0,
+      "explanation": "VLOOKUP searches for a value in the first column of a range."
+    },
+    {
+      "question": "Which formula calculates the average of cells B1 to B5?",
+      "options": [
+        "=MEAN(B1:B5)",
+        "=SUM(B1:B5)/5",
+        "=AVERAGE(B1:B5)",
+        "=AVG(B1:B5)"
+      ],
+      "correct": 2,
+      "explanation": "AVERAGE() calculates the arithmetic mean of the specified cells."
+    },
+    {
+      "question": "What is the purpose of the IF function?",
+      "options": [
+        "Counts the number of cells in a range",
+        "Rounds a number to the nearest integer",
+        "Adds up cells that meet a condition",
+        "Performs a logical test and returns one value if true, another if false"
+      ],
+      "correct": 3,
+      "explanation": "The IF function performs a logical test and returns different values based on the result."
+    },
+    {
+      "question": "Which formula concatenates the text in cells A1 and B1?",
+      "options": [
+        "=JOIN(A1, B1)",
+        "=A1 + B1",
+        "=CONCATENATE(A1, B1)",
+        "=MERGE(A1, B1)"
+      ],
+      "correct": 2,
+      "explanation": "CONCATENATE() combines the text from multiple cells into one cell."
+    },
+    {
+      "question": "What does the COUNTIF function do?",
+      "options": [
+        "Adds the values of cells that meet a condition",
+        "Counts the number of cells that meet a condition",
+        "Rounds numbers to a specified number of digits",
+        "Finds the maximum value in a range"
+      ],
+      "correct": 1,
+      "explanation": "COUNTIF() counts the number of cells within a range that meet the given condition."
+    },
+    {
+      "question": "Which formula returns the current date and time?",
+      "options": [
+        "=TODAY()",
+        "=DATE()",
+        "=NOW()",
+        "=TIME()"
+      ],
+      "correct": 2,
+      "explanation": "NOW() returns the current date and time, while TODAY() returns only the date."
+    },
+    {
+      "question": "What is the result of =LEFT('Excel', 2)?",
+      "options": [
+        "xl",
+        "ce",
+        "Ex",
+        "el"
+      ],
+      "correct": 2,
+      "explanation": "LEFT() extracts the specified number of characters from the start of a text string."
+    },
+    {
+      "question": "Which formula rounds a number to the nearest integer?",
+      "options": [
+        "=ROUND(number, 0)",
+        "=FLOOR(number)",
+        "=INT(number)",
+        "=CEILING(number)"
+      ],
+      "correct": 0,
+      "explanation": "ROUND(number, 0) rounds a number to the nearest integer."
+    },
+    {
+      "question": "What does the PMT function calculate?",
+      "options": [
+        "The internal rate of return",
+        "The present value of an investment",
+        "The payment for a loan based on constant payments and interest rate",
+        "The future value of an investment"
+      ],
+      "correct": 2,
+      "explanation": "PMT() calculates the periodic payment for a loan with fixed payments and interest rate."
+    }
+  ]
+}

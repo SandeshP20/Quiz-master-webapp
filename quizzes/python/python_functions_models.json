@@ -1,0 +1,117 @@
+{
+  "title": "Python Functions and Modules",
+  "description": "Test your knowledge of Python functions, modules, and imports",
+  "time_limit": 180,
+  "questions": [
+    {
+      "question": "What is the output of `print(type(lambda x: x))`?",
+      "options": [
+        "<class 'lambda'>",
+        "<class 'int'>",
+        "<class 'NoneType'>",
+        "<class 'function'>"
+      ],
+      "correct": 3,
+      "explanation": "A lambda function is of type 'function'."
+    },
+    {
+      "question": "Which of the following is NOT a valid function name?",
+      "options": [
+        "2nd_function",
+        "my_function",
+        "_function",
+        "function2"
+      ],
+      "correct": 0,
+      "explanation": "Function names cannot start with a number."
+    },
+    {
+      "question": "What does the `yield` keyword do in a function?",
+      "options": [
+        "Turns the function into a generator",
+        "Prints a value",
+        "Imports a module",
+        "Returns a value and terminates the function"
+      ],
+      "correct": 0,
+      "explanation": "The `yield` keyword turns a function into a generator, which can yield values one at a time."
+    },
+    {
+      "question": "What is the scope of a variable defined inside a function?",
+      "options": [
+        "Universal",
+        "Global",
+        "Local",
+        "Module-level"
+      ],
+      "correct": 2,
+      "explanation": "Variables defined inside a function have local scope and are not accessible outside it."
+    },
+    {
+      "question": "How do you call a function named `my_function`?",
+      "options": [
+        "my_function",
+        "function my_function",
+        "my_function()",
+        "call my_function"
+      ],
+      "correct": 2,
+      "explanation": "Functions are called using parentheses, e.g., `my_function()`."
+    },
+    {
+      "question": "How do you import the `math` module in Python?",
+      "options": [
+        "require math",
+        "import math",
+        "from math import all",
+        "include math"
+      ],
+      "correct": 1,
+      "explanation": "The `import math` statement is used to import the math module."
+    },
+    {
+      "question": "What does the `*args` parameter in a function definition do?",
+      "options": [
+        "Terminates the function",
+        "Allows passing keyword arguments",
+        "Imports all modules",
+        "Allows passing a variable number of positional arguments"
+      ],
+      "correct": 3,
+      "explanation": "`*args` allows a function to accept any number of positional arguments as a tuple."
+    },
+    {
+      "question": "What is the output of `print(math.sqrt(4))` if `import math` is done?",
+      "options": [
+        "2",
+        "4",
+        "2.0",
+        "Error"
+      ],
+      "correct": 2,
+      "explanation": "`math.sqrt(4)` returns the square root of 4 as a float (2.0)."
+    },
+    {
+      "question": "Which keyword is used to return a value from a function?",
+      "options": [
+        "exit",
+        "return",
+        "yield",
+        "break"
+      ],
+      "correct": 1,
+      "explanation": "The `return` keyword is used to exit a function and return a value."
+    },
+    {
+      "question": "What is the purpose of the `__init__` method in a class?",
+      "options": [
+        "To terminate the object",
+        "To initialize object attributes",
+        "To print the object",
+        "To compare objects"
+      ],
+      "correct": 1,
+      "explanation": "The `__init__` method is called when an object is created and is used to initialize its attributes."
+    }
+  ]
+}

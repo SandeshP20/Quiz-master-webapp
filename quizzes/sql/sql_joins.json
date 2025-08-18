@@ -1,0 +1,117 @@
+{
+  "title": "SQL Joins",
+  "description": "Test your knowledge of joining tables in SQL",
+  "time_limit": 180,
+  "questions": [
+    {
+      "question": "What is the purpose of a JOIN in SQL?",
+      "options": [
+        "To delete rows from a table",
+        "To combine rows from two or more tables",
+        "To sort rows in a table",
+        "To create a new table"
+      ],
+      "correct": 1,
+      "explanation": "JOIN combines rows from two or more tables based on a related column."
+    },
+    {
+      "question": "Which JOIN returns all rows from the left table and matched rows from the right table?",
+      "options": [
+        "RIGHT JOIN",
+        "LEFT JOIN",
+        "INNER JOIN",
+        "FULL JOIN"
+      ],
+      "correct": 1,
+      "explanation": "LEFT JOIN returns all rows from the left table and matched rows from the right table."
+    },
+    {
+      "question": "What does INNER JOIN return?",
+      "options": [
+        "Rows from the right table only",
+        "Rows with matching values in both tables",
+        "All rows from both tables",
+        "Rows from the left table only"
+      ],
+      "correct": 1,
+      "explanation": "INNER JOIN returns only the rows with matching values in both tables."
+    },
+    {
+      "question": "Which JOIN returns all rows from both tables, with NULLs where no match exists?",
+      "options": [
+        "RIGHT JOIN",
+        "LEFT JOIN",
+        "FULL JOIN",
+        "INNER JOIN"
+      ],
+      "correct": 2,
+      "explanation": "FULL JOIN returns all rows from both tables, filling in NULLs for non-matches."
+    },
+    {
+      "question": "What is the default JOIN type if just 'JOIN' is specified?",
+      "options": [
+        "LEFT JOIN",
+        "RIGHT JOIN",
+        "FULL JOIN",
+        "INNER JOIN"
+      ],
+      "correct": 3,
+      "explanation": "If only 'JOIN' is specified, it defaults to INNER JOIN."
+    },
+    {
+      "question": "Which clause is used to specify the condition for joining tables?",
+      "options": [
+        "WHERE",
+        "USING",
+        "ON",
+        "HAVING"
+      ],
+      "correct": 2,
+      "explanation": "The ON clause specifies the condition for joining tables."
+    },
+    {
+      "question": "What is a self-join?",
+      "options": [
+        "Joining a table to itself",
+        "Joining without a condition",
+        "Joining two identical tables",
+        "Joining three tables"
+      ],
+      "correct": 0,
+      "explanation": "A self-join is when a table is joined to itself, often to compare rows within the same table."
+    },
+    {
+      "question": "Which JOIN type is the opposite of LEFT JOIN?",
+      "options": [
+        "INNER JOIN",
+        "RIGHT JOIN",
+        "FULL JOIN",
+        "CROSS JOIN"
+      ],
+      "correct": 1,
+      "explanation": "RIGHT JOIN is the opposite of LEFT JOIN, returning all rows from the right table and matched rows from the left."
+    },
+    {
+      "question": "What does CROSS JOIN produce?",
+      "options": [
+        "A Cartesian product of the tables",
+        "Only non-matching rows",
+        "Only matching rows",
+        "A single row"
+      ],
+      "correct": 0,
+      "explanation": "CROSS JOIN produces a Cartesian product, combining all rows from both tables."
+    },
+    {
+      "question": "Which keyword is used to join tables based on columns with the same name?",
+      "options": [
+        "JOIN",
+        "ON",
+        "WHERE",
+        "USING"
+      ],
+      "correct": 3,
+      "explanation": "The USING keyword simplifies joins when columns in both tables have the same name."
+    }
+  ]
+}

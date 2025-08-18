@@ -1,0 +1,67 @@
+{
+  "title": "Python Numerical Data Types",
+  "description": "Test your knowledge on Python numerical data types: int, float, and complex numbers.",
+  "time_limit": 180,
+  "questions": [
+    {
+      "question": "What is the data type of the value 42 in Python?",
+      "options": ["float", "complex", "int", "str"],
+      "correct": 2,
+      "explanation": "In Python, 42 is an integer (int) because it has no decimal point."
+    },
+    {
+      "question": "Which of the following creates a complex number in Python?",
+      "options": ["3 + 4i", "complex(3,4)", "(3, 4)", "3 & 4j"],
+      "correct": 1,
+      "explanation": "The complex() function can be used to create a complex number in Python."
+    },
+    {
+      "question": "What will be the output of: type(3.0)?",
+      "options": ["class 'complex' ", "class 'float'", "class 'int'", "class 'str'"],
+      "correct": 1,
+      "explanation": "3.0 contains a decimal point, so it is a float."
+    },
+    {
+      "question": "Which code correctly checks if a number is a float?",
+      "options": ["isinstance(x, float)", "type(x) == float", "both A and B", "x is float"],
+      "correct": 2,
+      "explanation": "Both isinstance(x, float) and type(x) == float can be used."
+    },
+    {
+      "question": "In Python, what does 2 + 3j represent?",
+      "options": ["A tuple", "A string", "A complex number", "A float"],
+      "correct": 2,
+      "explanation": "The j suffix indicates the imaginary part, so this is a complex number."
+    },
+    {
+      "question": "What will be the output of: isinstance(5, int)?",
+      "options": ["True", "False", "Error", "None"],
+      "correct": 0,
+      "explanation": "5 is an integer, so isinstance(5, int) returns True."
+    },
+    {
+      "question": "Which statement correctly converts 5.7 into an integer?",
+      "options": ["int(5.7)", "float(5.7)", "str(5.7)", "complex(5.7)"],
+      "correct": 0,
+      "explanation": "The int() function converts a float to an integer by truncating the decimal part."
+    },
+    {
+      "question": "What is the output of: (3+4j).real?",
+      "options": ["4.0", "3.0", "7.0", "Error"],
+      "correct": 1,
+      "explanation": ".real returns the real part of a complex number, which is 3.0."
+    },
+    {
+      "question": "Which function is used to find the absolute value of a number in Python?",
+      "options": ["absolute()", "abs()", "fabs()", "math.abs()"],
+      "correct": 1,
+      "explanation": "abs() is the built-in Python function to find the absolute value."
+    },
+    {
+      "question": "What is the output of: type(3+0j)?",
+      "options": ["class 'int'", "class 'float'", "class 'complex'", "class 'tuple'"],
+      "correct": 2,
+      "explanation": "Even though the imaginary part is 0, 3+0j is still a complex number."
+    }
+  ]
+}

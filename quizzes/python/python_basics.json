@@ -1,0 +1,118 @@
+{
+  "title": "Python Basics",
+  "description": "Test your knowledge of fundamental Python concepts",
+  "time_limit": 180,
+  "questions": [
+    {
+      "question": "Which of the following is a mutable data type in Python?",
+      "options": [
+        "Integer",
+        "Tuple",
+        "List",
+        "String"
+      ],
+      "correct": 2,
+      "explanation": "Lists are mutable, meaning their elements can be changed after creation."
+    },
+    {
+      "question": "Which function is used to read input from the user?",
+      "options": [
+        "get()",
+        "scan()",
+        "read()",
+        "input()"
+      ],
+      "correct": 3,
+      "explanation": "The `input()` function reads a line from the user as a string."
+    },
+    {
+      "question": "Which keyword is used to define a function in Python?",
+      "options": [
+        "function",
+        "define",
+        "def",
+        "func"
+      ],
+      "correct": 2,
+      "explanation": "The 'def' keyword is used to define a function in Python."
+    },
+    {
+      "question": "Which operator is used for exponentiation in Python?",
+      "options": [
+        "%%",
+        "^",
+        "**",
+        "//"
+      ],
+      "correct": 2,
+      "explanation": "The '**' operator is used for exponentiation, e.g., 2**3 equals 8."
+    },
+    {
+      "question": "What does the `len()` function do?",
+      "options": [
+        "Creates a new list",
+        "Returns the length of an object",
+        "Prints the object to the console",
+        "Converts a value to an integer"
+      ],
+      "correct": 1,
+      "explanation": "The `len()` function returns the number of items in an object, such as a list or string."
+    },
+    {
+      "question": "How do you comment a single line in Python?",
+      "options": [
+        "# This is a comment",
+        "// This is a comment",
+        "<!-- This is a comment -->",
+        "/* This is a comment */"
+      ],
+      "correct": 0,
+      "explanation": "Single-line comments in Python start with the '#' symbol."
+    },
+    {
+      "question": "Which of the following is NOT a Python data type?",
+      "options": [
+        "tuple",
+        "dictionary",
+        "array",
+        "list"
+      ],
+      "correct": 2,
+      "explanation": "Python has 'list', 'dictionary', and 'tuple', but 'array' is not a built-in data type (though it exists in the 'array' module)."
+    },
+    {
+      "question": "What does the `range(5)` function generate?",
+      "options": [
+        "Numbers from 0 to 5",
+        "Numbers from 0 to 4",
+        "Numbers from 1 to 5",
+        "Numbers from 1 to 4"
+      ],
+      "correct": 1,
+      "explanation": "`range(5)` generates numbers from 0 up to, but not including, 5."
+    },
+    {
+      "question": "What is the output of `print(3 + 2 * 2)`?",
+      "options": [
+        "Error",
+        "7",
+        "10",
+        "5"
+      ],
+      "correct": 1,
+      "explanation": "Multiplication has higher precedence than addition, so 2*2 is evaluated first, then 3 is added."
+    },
+    {
+      "question": "What is the output of `print('Hello' + 'World')`?",
+      "options": [
+        "Hello+World",
+        "HelloWorld",
+        "Error",
+        "Hello World"
+      ],
+      "correct": 1,
+      "explanation": "The '+' operator concatenates strings without adding a space."
+    }
+  ]
+}
+  

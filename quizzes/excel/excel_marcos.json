@@ -1,0 +1,117 @@
+{
+  "title": "Excel Macros",
+  "description": "Test your knowledge of automating tasks with macros in Excel",
+  "time_limit": 180,
+  "questions": [
+    {
+      "question": "What does the 'Step Into' feature do in VBA debugging?",
+      "options": [
+        "Saves the macro",
+        "Stops the macro",
+        "Executes the code line by line",
+        "Skips the current line"
+      ],
+      "correct": 2,
+      "explanation": "'Step Into' allows you to execute the code line by line for debugging purposes."
+    },
+    {
+      "question": "Which of the following is NOT a VBA data type?",
+      "options": [
+        "Boolean",
+        "Table",
+        "Integer",
+        "String"
+      ],
+      "correct": 1,
+      "explanation": "VBA does not have a 'Table' data type; it uses 'Integer', 'String', 'Boolean', etc."
+    },
+    {
+      "question": "What is a macro in Excel?",
+      "options": [
+        "A built-in function",
+        "A large cell range",
+        "A recorded sequence of actions to automate tasks",
+        "A type of chart"
+      ],
+      "correct": 2,
+      "explanation": "A macro is a recorded sequence of actions that can be replayed to automate repetitive tasks."
+    },
+    {
+      "question": "Which shortcut opens the VBA editor in Excel?",
+      "options": [
+        "F5",
+        "Ctrl+V",
+        "Alt+F11",
+        "Shift+F3"
+      ],
+      "correct": 2,
+      "explanation": "Pressing Alt+F11 opens the VBA editor in Excel."
+    },
+    {
+      "question": "How do you record a macro in Excel?",
+      "options": [
+        "Press Ctrl+M",
+        "Go to the 'Formulas' tab and click 'Macro'",
+        "Go to the 'Developer' tab and click 'Record Macro'",
+        "Right-click a cell and select 'Record Macro'"
+      ],
+      "correct": 2,
+      "explanation": "Macros are recorded from the 'Developer' tab by clicking 'Record Macro'."
+    },
+    {
+      "question": "What is the file extension for an Excel macro-enabled workbook?",
+      "options": [
+        ".xls",
+        ".xlsm",
+        ".xlsx",
+        ".csv"
+      ],
+      "correct": 1,
+      "explanation": "Macro-enabled workbooks use the .xlsm extension."
+    },
+    {
+      "question": "Which language is used to write Excel macros?",
+      "options": [
+        "VBA (Visual Basic for Applications)",
+        "JavaScript",
+        "Python",
+        "C++"
+      ],
+      "correct": 0,
+      "explanation": "Excel macros are written in VBA (Visual Basic for Applications)."
+    },
+    {
+      "question": "How do you assign a macro to a button in Excel?",
+      "options": [
+        "Insert a button from the 'Developer' tab and assign the macro",
+        "Copy and paste the macro into a cell",
+        "Use the 'Format' tab to link the macro",
+        "Drag the macro onto the worksheet"
+      ],
+      "correct": 0,
+      "explanation": "Buttons can be inserted from the 'Developer' tab and assigned to macros."
+    },
+    {
+      "question": "What is the purpose of the 'Personal Macro Workbook'?",
+      "options": [
+        "To create personal notes",
+        "To store macros that can be used in any workbook",
+        "To format cells",
+        "To save personal data"
+      ],
+      "correct": 1,
+      "explanation": "The 'Personal Macro Workbook' stores macros that are available across all Excel workbooks."
+    },
+    {
+      "question": "What does the 'Run' button do in the VBA editor?",
+      "options": [
+        "Executes the selected macro or code",
+        "Deletes the macro",
+        "Formats the code",
+        "Saves the macro"
+      ],
+      "correct": 0,
+      "explanation": "The 'Run' button executes the selected macro or VBA code."
+    }
+  ]
+}

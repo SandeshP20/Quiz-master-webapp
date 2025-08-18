@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Quiz Master</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h1>Quiz Master</h1>
+                <p class="tagline">Welcome, {{ user.name }}!</p>
+            </div>
+
+            <div class="sidebar-content">
+                <div class="sidebar-item active" id="dashboard-link">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </div>
+                
+                <div class="sidebar-item" id="profile-link">
+                    <i class="fas fa-user"></i>
+                    <span>Profile</span>
+                </div>
+
+                <div class="sidebar-topic">
+                    <h3>Quiz Topics</h3>
+                    <div id="quiz-topics"></div>
+                </div>
+
+                <div class="sidebar-item" id="logout-link" style="margin-top: auto;">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div id="dashboard-container" class="dashboard-container">
+                <h2>Your Dashboard</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-value">{{ user.stats.quizzes_taken }}</div>
+                        <div>Quizzes Taken</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">{{ user.stats.total_score }}</div>
+                        <div>Total Score</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">{{ user.badges|length }}</div>
+                        <div>Badges Earned</div>
+                    </div>
+                </div>
+
+                <div class="performance-container">
+                    <div class="chart-section">
+                        <div class="chart-box">
+                            <h3>Total Score by Topic</h3>
+                            <canvas id="topicScoreChart"></canvas>
+                        </div>
+                        <div class="chart-box">
+                            <h3>Quizzes Completed (%)</h3>
+                            <canvas id="topicCompletionChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="badge-tracker">
+                        <h3>Badge Progress</h3>
+                        <div id="badge-progress-container"></div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Recent Activity</h3>
+                    <div id="activity-feed">
+                        <p>Last login: {{ user.stats.last_login }}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="profile-container" class="profile-container" style="display:none;">
+                <div class="profile-header">
+                    <div class="profile-pic">{{ user.name[0]|upper }}</div>
+                    <div>
+                        <h2>{{ user.name }}</h2>
+                        <p>Member since: {{ user.stats.last_login }}</p>
+                        {% if user.email %}
+                        <p>Email: {{ user.email }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Your Badges</h3>
+                    <div id="profile-badges">
+                        {% for badge in user.badges %}
+                        <div class="badge">{{ badge }}</div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Quiz History</h3>
+                    {% if user.history %}
+                        <ul>
+                        {% for item in user.history %}
+                            <li>{{ item.timestamp }} - <strong>{{ item.quiz }}</strong>: {{ item.score }} pts</li>
+                        {% endfor %}
+                        </ul>
+                    {% else %}
+                        <p>No quiz history found.</p>
+                    {% endif %}
+                </div>
+                <div class="card">
+                    <h3>Account Settings</h3>
+                    <button id="openChangePasswordModal" class="auth-btn">Change Password</button>
+                </div>
+            </div>
+
+            <div id="changePasswordModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeChangePasswordModal">&times;</span>
+                    <h2>Change Password</h2>
+                    <form id="changePasswordForm">
+                        <div class="input-group">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" name="old_password" placeholder="Old Password" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" name="new_password" placeholder="New Password" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" name="confirm_password" placeholder="Confirm New Password" required>
+                        </div>
+                        <button type="submit" class="auth-btn">Update Password</button>
+                        <div id="changePasswordMessage"></div>
+                    </form>
+                </div>
+            </div>
+
+            <div id="quiz-interface" style="display:none;"></div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="footer">
+        <p>&copy; 2025 Quiz Master. All rights reserved.</p>
+        <p>
+            Developed by <strong>Sandesh</strong> |
+            <a href="mailto:support@quizmaster.com">Contact Me</a>
+        </p>
+    </footer>
+</body>
+</html>

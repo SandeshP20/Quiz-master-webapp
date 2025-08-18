@@ -1,0 +1,169 @@
+{
+    "sandesh": {
+        "password": "sandesh1234",
+        "name": "sandesh",
+        "email": "",
+        "badges": [
+            "Beginner",
+            "Expert",
+            "Learner",
+            "Master",
+            "Performer"
+        ],
+        "stats": {
+            "quizzes_taken": 21,
+            "total_score": 91,
+            "last_login": "2025-08-18 15:12"
+        },
+        "history": [
+            {
+                "quiz": "Excel Formulas",
+                "score": 1,
+                "timestamp": "2025-08-10 21:22",
+                "total_questions": 2
+            },
+            {
+                "quiz": "Python Basics",
+                "score": 1,
+                "timestamp": "2025-08-10 21:22",
+                "total_questions": 2
+            },
+            {
+                "quiz": "SQL Basic Queries",
+                "score": 1,
+                "timestamp": "2025-08-10 21:22",
+                "total_questions": 2
+            },
+            {
+                "quiz": "Python Basics",
+                "score": 1,
+                "timestamp": "2025-08-10 21:24",
+                "total_questions": 2
+            },
+            {
+                "quiz": "Excel Charts",
+                "score": 8,
+                "timestamp": "2025-08-10 21:26",
+                "total_questions": 10
+            },
+            {
+                "quiz": "Python Basics",
+                "score": 9,
+                "timestamp": "2025-08-10 21:30",
+                "total_questions": 10
+            },
+            {
+                "quiz": "Excel Data Analysis",
+                "score": 8,
+                "timestamp": "2025-08-11 00:09",
+                "total_questions": 10
+            },
+            {
+                "quiz": "Excel Formulas",
+                "score": 8,
+                "timestamp": "2025-08-11 00:18",
+                "total_questions": 10
+            },
+            {
+                "quiz": "Python Functions and Modules",
+                "score": 6,
+                "timestamp": "2025-08-11 00:22",
+                "total_questions": 10
+            },
+            {
+                "quiz": "Python Functions and Modules",
+                "score": 3,
+                "timestamp": "2025-08-11 00:30",
+                "total_questions": 10
+            },
+            {
+                "quiz": "SQL Basics",
+                "score": 9,
+                "timestamp": "2025-08-11 00:45",
+                "total_questions": 10
+            },
+            {
+                "quiz": "Excel Formulas",
+                "score": 2,
+                "timestamp": "2025-08-11 12:55",
+                "total_questions": 2
+            },
+            {
+                "quiz": "Excel Formulas",
+                "score": 0,
+                "timestamp": "2025-08-11 21:27",
+                "total_questions": 2
+            },
+            {
+                "quiz": "Excel Formulas",
+                "score": 2,
+                "timestamp": "2025-08-11 23:30",
+                "total_questions": 2
+            },
+            {
+                "quiz": "Excel Charts",
+                "score": 2,
+                "timestamp": "2025-08-14 16:03",
+                "total_questions": 10
+            },
+            {
+                "quiz": "Python Sequential Data Types Quiz",
+                "score": 0,
+                "timestamp": "2025-08-14 16:48",
+                "total_questions": 10
+            },
+            {
+                "quiz": "Python Numerical Data Types",
+                "score": 5,
+                "timestamp": "2025-08-14 17:00",
+                "total_questions": 10
+            },
+            {
+                "quiz": "Python Abstraction Quiz",
+                "score": 5,
+                "timestamp": "2025-08-17 13:33",
+                "total_questions": 10
+            },
+            {
+                "quiz": "Python Basics",
+                "score": 10,
+                "timestamp": "2025-08-17 13:39",
+                "total_questions": 10
+            },
+            {
+                "quiz": "Excel Charts",
+                "score": 6,
+                "timestamp": "2025-08-18 13:02",
+                "total_questions": 10
+            },
+            {
+                "quiz": "Python Basics",
+                "score": 4,
+                "timestamp": "2025-08-18 15:13",
+                "total_questions": 10
+            }
+        ]
+    },
+    "parasharam": {
+        "password": "12345",
+        "name": "parasharam",
+        "email": "",
+        "badges": [
+            "Beginner",
+            "Performer"
+        ],
+        "stats": {
+            "quizzes_taken": 1,
+            "total_score": 9,
+            "last_login": "2025-08-13 21:19"
+        },
+        "history": [
+            {
+                "quiz": "Excel Charts",
+                "score": 9,
+                "timestamp": "2025-08-13 21:28",
+                "total_questions": 10
+            }
+        ]
+    }
+}

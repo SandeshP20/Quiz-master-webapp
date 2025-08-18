@@ -1,0 +1,117 @@
+{
+  "title": "Python Data Structures",
+  "description": "Test your knowledge of Python data structures like lists, tuples, and dictionaries",
+  "time_limit": 180,
+  "questions": [
+    {
+      "question": "Which of the following is an immutable data structure?",
+      "options": [
+        "Set",
+        "Tuple",
+        "Dictionary",
+        "List"
+      ],
+      "correct": 1,
+      "explanation": "Tuples are immutable, meaning their elements cannot be changed after creation."
+    },
+    {
+      "question": "Which method removes all items from a list?",
+      "options": [
+        "remove()",
+        "pop()",
+        "clear()",
+        "delete()"
+      ],
+      "correct": 2,
+      "explanation": "The `clear()` method removes all items from a list."
+    },
+    {
+      "question": "How do you create an empty set in Python?",
+      "options": [
+        "set()",
+        "{}",
+        "()",
+        "[]"
+      ],
+      "correct": 0,
+      "explanation": "An empty set is created using `set()`. `{}` creates an empty dictionary."
+    },
+    {
+      "question": "What is the output of `(1, 2) + (3, 4)`?",
+      "options": [
+        "(1, 2)(3, 4)",
+        "(1, 2, 3, 4)",
+        "(4, 6)",
+        "Error"
+      ],
+      "correct": 1,
+      "explanation": "The '+' operator concatenates tuples."
+    },
+    {
+      "question": "Which of the following is NOT a valid dictionary key?",
+      "options": [
+        "(1, 2)",
+        "'name'",
+        "1",
+        "[1, 2]"
+      ],
+      "correct": 3,
+      "explanation": "Lists are mutable and cannot be used as dictionary keys. Only immutable types like strings, numbers, and tuples can be keys."
+    },
+    {
+      "question": "Which method adds an element to the end of a list?",
+      "options": [
+        "extend()",
+        "append()",
+        "add()",
+        "insert()"
+      ],
+      "correct": 1,
+      "explanation": "The `append()` method adds an element to the end of a list."
+    },
+    {
+      "question": "How do you access the value associated with the key 'name' in a dictionary `person`?",
+      "options": [
+        "person.get_key('name')",
+        "person['name']",
+        "person('name')",
+        "person.key('name')"
+      ],
+      "correct": 1,
+      "explanation": "Dictionary values are accessed using square brackets and the key, e.g., `person['name']`."
+    },
+    {
+      "question": "What is the output of `[x for x in range(3)]`?",
+      "options": [
+        "[1, 2]",
+        "[0, 1, 2]",
+        "[0, 1, 2, 3]",
+        "[1, 2, 3]"
+      ],
+      "correct": 1,
+      "explanation": "This list comprehension generates numbers from 0 to 2."
+    },
+    {
+      "question": "What does the `pop()` method do for a list?",
+      "options": [
+        "Sorts the list",
+        "Removes and returns the last item",
+        "Adds an item to the end",
+        "Reverses the list"
+      ],
+      "correct": 1,
+      "explanation": "The `pop()` method removes and returns the last item in the list by default."
+    },
+    {
+      "question": "What is the output of `{'a': 1, 'b': 2}.get('c', 3)`?",
+      "options": [
+        "None",
+        "0",
+        "3",
+        "Error"
+      ],
+      "correct": 2,
+      "explanation": "The `get()` method returns the default value (3) if the key ('c') is not found."
+    }
+  ]
+}

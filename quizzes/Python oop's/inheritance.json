@@ -1,0 +1,117 @@
+{
+  "title": "Python Inheritance Quiz",
+  "description": "Test your understanding of Python class inheritance concepts.",
+  "time_limit": 180,
+  "questions": [
+    {
+      "question": "What is inheritance in Python OOP?",
+      "options": [
+        "A loop inside a class",
+        "An error handling mechanism",
+        "A class deriving attributes and methods from another class",
+        "A function inside a class"
+      ],
+      "correct": 2,
+      "explanation": "Inheritance allows a class (child) to access attributes and methods from another class (parent)."
+    },
+    {
+      "question": "Which keyword is used to inherit from a parent class?",
+      "options": [
+        "extends",
+        "super",
+        "class Parent",
+        "inherits"
+      ],
+      "correct": 0,
+      "explanation": "Python uses the syntax `class Child(Parent):` to inherit from a parent class."
+    },
+    {
+      "question": "What is the output?\n\n```python\nclass A:\n    def show(self):\n        print('A')\n\nclass B(A):\n    pass\n\nb = B()\nb.show()\n```",
+      "options": [
+        "B",
+        "A",
+        "None",
+        "Error"
+      ],
+      "correct": 1,
+      "explanation": "Class B inherits from A, so it can access A's `show()` method. It prints 'A'."
+    },
+    {
+      "question": "Which function allows access to a parent class method from a child?",
+      "options": [
+        "self()",
+        "base()",
+        "parent()",
+        "super()"
+      ],
+      "correct": 3,
+      "explanation": "`super()` is used to call parent class methods in a child class."
+    },
+    {
+      "question": "What type of inheritance is this?\n\n```python\nclass A: pass\nclass B(A): pass\nclass C(B): pass\n```",
+      "options": [
+        "Multiple Inheritance",
+        "Single Inheritance",
+        "Multilevel Inheritance",
+        "Hierarchical Inheritance"
+      ],
+      "correct": 2,
+      "explanation": "C inherits from B which inherits from A, forming a multilevel inheritance chain."
+    },
+    {
+      "question": "What type of inheritance allows a child to inherit from multiple parents?",
+      "options": [
+        "Hierarchical Inheritance",
+        "Single Inheritance",
+        "Multilevel Inheritance",
+        "Multiple Inheritance"
+      ],
+      "correct": 3,
+      "explanation": "Multiple inheritance allows a class to inherit from more than one parent class."
+    },
+    {
+      "question": "Predict the output:\n\n```python\nclass A:\n    def show(self):\n        print('A')\nclass B(A):\n    def show(self):\n        print('B')\nb = B()\nb.show()\n```",
+      "options": [
+        "None",
+        "B",
+        "A",
+        "Error"
+      ],
+      "correct": 1,
+      "explanation": "Child class B overrides `show()` method of parent A, so it prints 'B'."
+    },
+    {
+      "question": "What type of inheritance is this?\n\n```python\nclass A: pass\nclass B(A): pass\nclass C(A): pass\n```",
+      "options": [
+        "Hierarchical Inheritance",
+        "Multiple Inheritance",
+        "Single Inheritance",
+        "Multilevel Inheritance"
+      ],
+      "correct": 0,
+      "explanation": "Both B and C inherit from A, forming a hierarchical inheritance structure."
+    },
+    {
+      "question": "What happens if a method is not found in the child class?",
+      "options": [
+        "Python exits",
+        "Python raises an error",
+        "Python searches in the parent class",
+        "Python ignores it"
+      ],
+      "correct": 2,
+      "explanation": "If a child class doesn’t have the method, Python looks for it in the parent class(es)."
+    },
+    {
+      "question": "Which statement is true about inheritance?",
+      "options": [
+        "Inheritance is only used in functions",
+        "Parent classes can access child attributes directly",
+        "Child classes can access parent attributes and methods",
+        "Inheritance duplicates parent methods"
+      ],
+      "correct": 2,
+      "explanation": "Child classes inherit attributes and methods from the parent, enabling code reuse."
+    }
+  ]
+}

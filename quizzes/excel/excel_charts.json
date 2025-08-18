@@ -1,0 +1,117 @@
+{
+  "title": "Excel Charts",
+  "description": "Test your knowledge of creating and customizing charts in Excel",
+  "time_limit": 180,
+  "questions": [
+    {
+      "question": "Which chart type is best for showing trends over time?",
+      "options": [
+        "Scatter plot",
+        "Bar chart",
+        "Line chart",
+        "Pie chart"
+      ],
+      "correct": 2,
+      "explanation": "Line charts are ideal for displaying trends over time."
+    },
+    {
+      "question": "What is the purpose of the 'Chart Title' in an Excel chart?",
+      "options": [
+        "To change the chart type",
+        "To label the axes",
+        "To add a legend",
+        "To describe the chart's purpose or content"
+      ],
+      "correct": 3,
+      "explanation": "The chart title provides a brief description of what the chart represents."
+    },
+    {
+      "question": "Which of the following is NOT a chart element?",
+      "options": [
+        "Formula Bar",
+        "Axes",
+        "Legend",
+        "Data Table"
+      ],
+      "correct": 0,
+      "explanation": "The Formula Bar is not a chart element; it is part of the Excel interface for editing cell contents."
+    },
+    {
+      "question": "How do you add data labels to a chart?",
+      "options": [
+        "Drag the labels from the worksheet onto the chart",
+        "Go to the 'Formulas' tab and click 'Insert Function'",
+        "Press Ctrl+L",
+        "Right-click the data series and select 'Add Data Labels'"
+      ],
+      "correct": 3,
+      "explanation": "Data labels can be added by right-clicking the data series and selecting 'Add Data Labels'."
+    },
+    {
+      "question": "Which chart type is used to show proportions of a whole?",
+      "options": [
+        "Histogram",
+        "Pie chart",
+        "Line chart",
+        "Bar chart"
+      ],
+      "correct": 1,
+      "explanation": "Pie charts are used to show how parts contribute to the whole."
+    },
+    {
+      "question": "What does the 'Legend' in a chart represent?",
+      "options": [
+        "The vertical axis",
+        "The horizontal axis",
+        "The title of the chart",
+        "A key to the colors or patterns used in the chart"
+      ],
+      "correct": 3,
+      "explanation": "The legend explains the colors, patterns, or symbols used in the chart."
+    },
+    {
+      "question": "Which tab in Excel is used to customize chart elements?",
+      "options": [
+        "Review",
+        "Chart Design",
+        "Data",
+        "View"
+      ],
+      "correct": 1,
+      "explanation": "The 'Chart Design' tab provides tools for customizing chart elements."
+    },
+    {
+      "question": "What is the purpose of a 'Scatter Plot'?",
+      "options": [
+        "To compare categories",
+        "To show parts of a whole",
+        "To display trends over time",
+        "To show the relationship between two variables"
+      ],
+      "correct": 3,
+      "explanation": "Scatter plots are used to visualize the relationship between two numerical variables."
+    },
+    {
+      "question": "How do you change the chart type in Excel?",
+      "options": [
+        "Press Ctrl+T",
+        "Double-click the chart title",
+        "Go to the 'Home' tab and click 'Format'",
+        "Right-click the chart and select 'Change Chart Type'"
+      ],
+      "correct": 3,
+      "explanation": "The chart type can be changed by right-clicking the chart and selecting 'Change Chart Type'."
+    },
+    {
+      "question": "Which of the following is a 3D chart type in Excel?",
+      "options": [
+        "3D Data Table",
+        "3D Pivot Table",
+        "3D Column Chart",
+        "3D Formula"
+      ],
+      "correct": 2,
+      "explanation": "3D Column Chart is a 3D visualization option in Excel."
+    }
+  ]
+}

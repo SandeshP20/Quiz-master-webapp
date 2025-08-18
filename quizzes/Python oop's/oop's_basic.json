@@ -1,0 +1,82 @@
+{
+  "title": "Python OOP Basics Quiz",
+  "description": "Test your understanding of Python's basic Object-Oriented Programming concepts: classes, objects, constructors, and methods.",
+  "time_limit": 180,
+  "questions": [
+    {
+      "question": "What will be the output of the following code?\n\n```python\nclass Person:\n    def __init__(self, name):\n        self.name = name\np = Person('Alice')\nprint(p.name)\n```",
+      "options": ["None", "Alice", "Error", "p.name"],
+      "correct": 1,
+      "explanation": "The __init__ constructor initializes the attribute `name` with 'Alice'. So, p.name prints 'Alice'."
+    },
+    {
+      "question": "Which of the following correctly defines a method in a class?",
+      "options": [
+        "def greet(): print('Hello')",
+        "def greet(self, name): print('Hello')",
+        "greet() { print('Hello') }",
+        "def greet(self): print('Hello')"
+      ],
+      "correct": 3,
+      "explanation": "In Python, a method inside a class must have `self` as its first parameter to access instance attributes."
+    },
+    {
+      "question": "How do you create an object of a class `Car`?",
+      "options": ["c = new Car()", "Car c = new Car()", "Car() = c", "c = Car()"],
+      "correct": 3,
+      "explanation": "In Python, objects are created by calling the class like a function: `c = Car()`."
+    },
+    {
+      "question": "What is the purpose of the `__init__` method?",
+      "options": [
+        "It overrides a method",
+        "It initializes the object when it is created",
+        "It prints the object",
+        "It deletes the object"
+      ],
+      "correct": 1,
+      "explanation": "The `__init__` method is the constructor used to initialize instance attributes when a new object is created."
+    },
+    {
+      "question": "What will the following code print?\n\n```python\nclass A:\n    def greet(self):\n        print('Hello')\nobj = A()\nobj.greet()\n```",
+      "options": ["Error", "A", "Hello", "None"],
+      "correct": 2,
+      "explanation": "The `greet` method of class A prints 'Hello'. obj.greet() calls this method."
+    },
+    {
+      "question": "Which of the following adds an attribute `age` to an object `p` of class `Person`?",
+      "options": ["p->age = 25", "age = 25", "p.age = 25", "Person.age = 25"],
+      "correct": 2,
+      "explanation": "Instance attributes are added to the object using dot notation: `p.age = 25`."
+    },
+    {
+      "question": "What will be the output of:\n\n```python\nclass Test:\n    def show(self):\n        print('Test Method')\nobj = Test()\nobj.show()\n```",
+      "options": ["Test Method", "Error", "obj.show", "None"],
+      "correct": 0,
+      "explanation": "The show method prints 'Test Method'. Calling obj.show() executes it."
+    },
+    {
+      "question": "Which statement is TRUE about objects in Python?",
+      "options": [
+        "Objects cannot call methods",
+        "Objects are instances of a class",
+        "Objects are the same as classes",
+        "Objects cannot have attributes"
+      ],
+      "correct": 1,
+      "explanation": "An object is a concrete instance of a class, which can have attributes and methods."
+    },
+    {
+      "question": "What will the following code print?\n\n```python\nclass Sample:\n    def __init__(self, x):\n        self.x = x\ns = Sample(10)\nprint(s.x)\n```",
+      "options": ["x", "10", "None", "Error"],
+      "correct": 1,
+      "explanation": "The __init__ method sets s.x = 10. So, print(s.x) outputs 10."
+    },
+    {
+      "question": "Which of these correctly calls a method `display` of object `obj`?",
+      "options": ["obj->display()", "display(obj)", "obj.display()", "display.obj()"],
+      "correct": 2,
+      "explanation": "Methods are called on objects using dot notation: `obj.display()`."
+    }
+  ]
+}

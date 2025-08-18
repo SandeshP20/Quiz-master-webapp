@@ -1,0 +1,117 @@
+{
+  "title": "Excel Data Analysis",
+  "description": "Test your knowledge of data analysis tools in Excel",
+  "time_limit": 180,
+  "questions": [
+    {
+      "question": "What is the purpose of a PivotTable?",
+      "options": [
+        "To write formulas",
+        "To create charts",
+        "To format cells",
+        "To summarize and analyze large datasets"
+      ],
+      "correct": 3,
+      "explanation": "PivotTables are used to summarize, analyze, and present large datasets in a concise format."
+    },
+    {
+      "question": "Which tool is used to perform 'What-If' analysis in Excel?",
+      "options": [
+        "Goal Seek",
+        "Conditional Formatting",
+        "Data Validation",
+        "PivotTable"
+      ],
+      "correct": 0,
+      "explanation": "Goal Seek is a 'What-If' analysis tool that adjusts one input to achieve a desired result."
+    },
+    {
+      "question": "What does the 'Sort' feature in Excel do?",
+      "options": [
+        "Creates a summary report",
+        "Deletes duplicate values",
+        "Arranges data in a specified order",
+        "Hides rows or columns"
+      ],
+      "correct": 2,
+      "explanation": "The 'Sort' feature arranges data in ascending or descending order based on selected criteria."
+    },
+    {
+      "question": "Which feature is used to highlight cells based on specific conditions?",
+      "options": [
+        "Subtotal",
+        "Conditional Formatting",
+        "Data Validation",
+        "Filter"
+      ],
+      "correct": 1,
+      "explanation": "Conditional Formatting changes the appearance of cells based on specified conditions."
+    },
+    {
+      "question": "What is the purpose of the 'Filter' tool?",
+      "options": [
+        "To display only the data that meets certain criteria",
+        "To calculate averages",
+        "To create charts",
+        "To merge cells"
+      ],
+      "correct": 0,
+      "explanation": "The 'Filter' tool allows users to display only the rows that meet specific criteria."
+    },
+    {
+      "question": "Which function is used to count the number of cells that contain numbers?",
+      "options": [
+        "COUNTA",
+        "COUNTIF",
+        "COUNTBLANK",
+        "COUNT"
+      ],
+      "correct": 3,
+      "explanation": "The COUNT function counts the number of cells in a range that contain numbers."
+    },
+    {
+      "question": "What does the 'Data Validation' feature do?",
+      "options": [
+        "Validates formulas for errors",
+        "Checks for duplicate values",
+        "Restricts the type of data that can be entered into a cell",
+        "Sorts data alphabetically"
+      ],
+      "correct": 2,
+      "explanation": "Data Validation restricts the type of data that can be entered into a cell, such as numbers or dates."
+    },
+    {
+      "question": "Which tool is used to remove duplicate values from a dataset?",
+      "options": [
+        "PivotTable",
+        "Remove Duplicates",
+        "Advanced Filter",
+        "Conditional Formatting"
+      ],
+      "correct": 1,
+      "explanation": "The 'Remove Duplicates' tool identifies and deletes duplicate rows in a dataset."
+    },
+    {
+      "question": "What is the purpose of the 'Subtotal' feature?",
+      "options": [
+        "To filter data",
+        "To validate data entries",
+        "To create a summary table",
+        "To calculate subtotals for groups of data"
+      ],
+      "correct": 3,
+      "explanation": "The 'Subtotal' feature calculates subtotals for groups of data in a list."
+    },
+    {
+      "question": "Which function is used to find the highest value in a range?",
+      "options": [
+        "SUM",
+        "MAX",
+        "MIN",
+        "AVERAGE"
+      ],
+      "correct": 1,
+      "explanation": "The MAX function returns the highest value in a range of cells."
+    }
+  ]
+}

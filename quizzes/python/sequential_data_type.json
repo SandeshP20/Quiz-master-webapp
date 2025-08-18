@@ -1,0 +1,67 @@
+{
+  "title": "Python Sequential Data Types",
+  "description": "Quiz on Python sequential data types: range, list, string, and tuple.",
+  "time_limit": 180,
+  "questions": [
+    {
+      "question": "Which of the following is NOT a sequential data type in Python?",
+      "options": ["list", "tuple", "set", "string"],
+      "correct": 2,
+      "explanation": "Set is an unordered collection and not a sequential data type."
+    },
+    {
+      "question": "What will be the output of the following code?\n\nlist(range(0, 10, 2))",
+      "options": ["[0, 2, 4, 6, 8]", "[0, 1, 2, 3, 4]", "[2, 4, 6, 8, 10]", "[0, 2, 4, 6, 8, 10]"],
+      "correct": 0,
+      "explanation": "range(0, 10, 2) generates numbers starting from 0 to less than 10 with a step of 2."
+    },
+    {
+      "question": "Which method is used to add an element at the end of a list?",
+      "options": ["append()", "insert()", "extend()", "add()"],
+      "correct": 0,
+      "explanation": "append() adds an element at the end of a list."
+    },
+    {
+      "question": "What is the output of the following code?\n\n'sandesh'[2:5]",
+      "options": ["nde", "nde", "and", "nde "],
+      "correct": 0,
+      "explanation": "Index 2 is 'n' and slicing stops at index 5 (exclusive), giving 'nde'."
+    },
+    {
+      "question": "Which of the following statements creates a tuple?",
+      "options": ["t = (1, 2, 3)", "t = 1, 2, 3", "t = tuple([1, 2, 3])", "All of the above"],
+      "correct": 3,
+      "explanation": "All mentioned ways create a tuple."
+    },
+    {
+      "question": "What will be the output?\n\nt = (1, 2, 3)\nprint(t[1])",
+      "options": ["1", "2", "3", "Error"],
+      "correct": 1,
+      "explanation": "Tuple indexing starts from 0, so t[1] is 2."
+    },
+    {
+      "question": "Which function is used to find the length of a list?",
+      "options": ["size()", "len()", "length()", "count()"],
+      "correct": 1,
+      "explanation": "len() returns the number of elements in a sequence."
+    },
+    {
+      "question": "What is the result of the following code?\n\nlist('abc')",
+      "options": ["['a', 'b', 'c']", "['abc']", "Error", "['a b c']"],
+      "correct": 0,
+      "explanation": "Passing a string to list() converts it into a list of its characters."
+    },
+    {
+      "question": "What will be the output of the following code?\n\n'range'[::-1]",
+      "options": ["'egnar'", "'range'", "Error", "'egar'"],
+      "correct": 0,
+      "explanation": "The slicing with -1 step reverses the string."
+    },
+    {
+      "question": "How do you create a range object from 5 to 15 with a step of 3?",
+      "options": ["range(5, 15, 3)", "range(5, 16, 3)", "range(3, 15, 5)", "range(15, 5, 3)"],
+      "correct": 0,
+      "explanation": "range(5, 15, 3) starts at 5 and increments by 3 until it reaches but does not include 15."
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "title": "Python Encapsulation Quiz",
+  "description": "Test your understanding of encapsulation in Python classes.",
+  "time_limit": 180,
+  "questions": [
+    {
+      "question": "What is encapsulation in Python?",
+      "options": [
+        "Separating code into modules",
+        "Restricting access to some components of an object",
+        "Overloading functions",
+        "Combining multiple classes into one"
+      ],
+      "correct": 1,
+      "explanation": "Encapsulation restricts direct access to object attributes and methods, usually by using private variables."
+    },
+    {
+      "question": "Which prefix makes an attribute private in Python?",
+      "options": [
+        "_ (single underscore)",
+        "# (hash)",
+        "__ (double underscore)",
+        "private"
+      ],
+      "correct": 2,
+      "explanation": "Double underscore '__' before a variable name makes it private to the class."
+    },
+    {
+      "question": "What is the main benefit of encapsulation?",
+      "options": [
+        "Making attributes global",
+        "Avoiding inheritance",
+        "Faster code execution",
+        "Protecting object integrity by preventing direct modification of attributes"
+      ],
+      "correct": 3,
+      "explanation": "Encapsulation ensures controlled access to attributes, maintaining object integrity."
+    },
+    {
+      "question": "Which of the following is a valid way to access a private variable indirectly?",
+      "options": [
+        "Using getter methods",
+        "Directly using the variable name",
+        "Overwriting the class",
+        "Using a different class"
+      ],
+      "correct": 0,
+      "explanation": "Private variables are accessed indirectly via getter (and setter) methods."
+    },
+    {
+      "question": "What does the term 'data hiding' refer to in Python?",
+      "options": [
+        "Using global variables",
+        "Hiding internal object details using private attributes",
+        "Deleting variables after use",
+        "Storing data in external files"
+      ],
+      "correct": 1,
+      "explanation": "Data hiding protects the internal state of an object by restricting access to private attributes."
+    },
+    {
+      "question": "Can private variables be accessed outside their class directly?",
+      "options": [
+        "Only in Python 2",
+        "Yes, by default",
+        "Only in subclasses",
+        "No, they require getter/setter methods"
+      ],
+      "correct": 3,
+      "explanation": "Private variables cannot be accessed directly; you need methods like getters/setters."
+    },
+    {
+      "question": "How do setter methods relate to encapsulation?",
+      "options": [
+        "They encrypt object data",
+        "They create new classes",
+        "They provide controlled modification of private attributes",
+        "They delete attributes automatically"
+      ],
+      "correct": 2,
+      "explanation": "Setter methods allow safe modification of private attributes while enforcing constraints."
+    },
+    {
+      "question": "Which of the following is true about private methods in Python?",
+      "options": [
+        "They are automatically executed at class load",
+        "They are not accessible outside the class directly",
+        "They can be called from any module freely",
+        "They are faster than public methods"
+      ],
+      "correct": 1,
+      "explanation": "Private methods are meant to be used only inside the class and cannot be called directly from outside."
+    },
+    {
+      "question": "Which of these demonstrates encapsulation?",
+      "options": [
+        "import math",
+        "x = 5 + 3",
+        "class Employee:\n    def __init__(self):\n        self.__salary = 5000\n    def get_salary(self):\n        return self.__salary",
+        "def add(a, b): return a + b"
+      ],
+      "correct": 2,
+      "explanation": "Using private attributes and getter methods in a class demonstrates encapsulation."
+    },
+    {
+      "question": "What happens if you try to access a private variable directly?",
+      "options": [
+        "Python raises an AttributeError",
+        "It triggers garbage collection",
+        "Python ignores it silently",
+        "It works normally"
+      ],
+      "correct": 0,
+      "explanation": "Direct access to private variables outside the class raises an AttributeError in Python."
+    }
+  ]
+}

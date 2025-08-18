@@ -1,0 +1,117 @@
+{
+  "title": "SQL Basics",
+  "description": "Test your knowledge of fundamental SQL concepts",
+  "time_limit": 180,
+  "questions": [
+    {
+      "question": "What does SQL stand for?",
+      "options": [
+        "Standard Query Language",
+        "Sequential Query Language",
+        "Structured Query Language",
+        "Simple Query Language"
+      ],
+      "correct": 2,
+      "explanation": "SQL stands for Structured Query Language, used for managing relational databases."
+    },
+    {
+      "question": "Which SQL command retrieves data from a database?",
+      "options": [
+        "FETCH",
+        "GET",
+        "SELECT",
+        "RETRIEVE"
+      ],
+      "correct": 2,
+      "explanation": "The SELECT command retrieves data from one or more tables."
+    },
+    {
+      "question": "What is the purpose of the WHERE clause?",
+      "options": [
+        "To join tables",
+        "To filter records based on a condition",
+        "To sort records",
+        "To group records"
+      ],
+      "correct": 1,
+      "explanation": "The WHERE clause filters records to include only those that meet a specified condition."
+    },
+    {
+      "question": "Which operator is used to combine multiple conditions in a WHERE clause?",
+      "options": [
+        "ALSO",
+        "AND",
+        "PLUS",
+        "WITH"
+      ],
+      "correct": 1,
+      "explanation": "The AND operator combines multiple conditions, all of which must be true."
+    },
+    {
+      "question": "What does the INSERT command do?",
+      "options": [
+        "Creates a new table",
+        "Updates existing records",
+        "Adds new records to a table",
+        "Deletes records"
+      ],
+      "correct": 2,
+      "explanation": "The INSERT command adds new rows (records) to a table."
+    },
+    {
+      "question": "Which SQL clause sorts the result set?",
+      "options": [
+        "SORT BY",
+        "GROUP BY",
+        "ARRANGE BY",
+        "ORDER BY"
+      ],
+      "correct": 3,
+      "explanation": "The ORDER BY clause sorts the result set in ascending or descending order."
+    },
+    {
+      "question": "What is the default sorting order of ORDER BY?",
+      "options": [
+        "Descending",
+        "Ascending",
+        "Random",
+        "Alphabetical"
+      ],
+      "correct": 1,
+      "explanation": "The default sorting order of ORDER BY is ascending (ASC)."
+    },
+    {
+      "question": "Which command deletes all records from a table without deleting the table?",
+      "options": [
+        "TRUNCATE TABLE",
+        "DROP TABLE",
+        "REMOVE",
+        "DELETE FROM"
+      ],
+      "correct": 3,
+      "explanation": "DELETE FROM removes all records from a table but keeps the table structure intact."
+    },
+    {
+      "question": "What does the UPDATE command do?",
+      "options": [
+        "Deletes records",
+        "Creates a new table",
+        "Modifies existing records",
+        "Adds new records"
+      ],
+      "correct": 2,
+      "explanation": "The UPDATE command modifies existing records in a table."
+    },
+    {
+      "question": "Which SQL function counts the number of rows in a table?",
+      "options": [
+        "TOTAL()",
+        "NUMBER()",
+        "SUM()",
+        "COUNT()"
+      ],
+      "correct": 3,
+      "explanation": "The COUNT() function returns the number of rows that match a specified condition."
+    }
+  ]
+}
