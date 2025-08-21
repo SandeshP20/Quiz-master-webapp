@@ -1,4 +1,3 @@
-# app.py
 from flask import Flask, render_template, request, redirect, url_for, session, jsonify
 import os
 import json
@@ -8,15 +7,9 @@ import secrets
 app = Flask(__name__)
 app.secret_key = 'your_secret_key_here'
 
-# --------------------
-# Config / Files
-# --------------------
 USER_FILE = 'users.json'
 RESET_CODE_TTL_MINUTES = 15
 
-# --------------------
-# Load users (or create if not exists)
-# --------------------
 if os.path.exists(USER_FILE):
     with open(USER_FILE, 'r') as f:
         users = json.load(f)
@@ -28,9 +21,6 @@ def save_users():
     with open(USER_FILE, 'w') as f:
         json.dump(users, f, indent=4)
 
-# --------------------
-# Helper: quiz data and badge computation
-# --------------------
 def get_available_quizzes():
     """Reads the quizzes directory to get all available quizzes by topic."""
     quizzes = {}
@@ -61,10 +51,8 @@ def compute_badges_for_user(user):
         badges.add("Beginner")
         return sorted(list(badges))
 
-    # Always at least Beginner if any quiz taken
     badges.add("Beginner")
 
-    # Basic stats
     total_quizzes = len(history)
     total_score = sum(entry.get('score', 0) for entry in history)
     avg_score = total_score / total_quizzes if total_quizzes else 0
@@ -72,12 +60,9 @@ def compute_badges_for_user(user):
     if total_quizzes >= 5 and avg_score >= 3:
         badges.add("Learner")
 
-    # Performer: any quiz with score >= 4
     if any(entry.get('score', 0) >= 4 for entry in history):
         badges.add("Performer")
 
-    # Topic-level aggregates
-    # topic is inferred as first word of quiz title (as used in frontend)
     topic_scores = {}
     topic_quiz_counts = {}
     topic_perfect_counts = {}
@@ -90,8 +75,6 @@ def compute_badges_for_user(user):
         topic_scores.setdefault(topic, []).append(score)
         topic_quiz_counts[topic] = topic_quiz_counts.get(topic, 0) + 1
 
-        # if quiz carried total_questions info in entry, prefer that, else skip perfect logic
-        # We'll assume quizzes are 5-question quizzes by default unless `total_questions` present.
         total_q = entry.get('total_questions')
         if total_q is not None:
             if score == total_q:
@@ -115,9 +98,7 @@ def compute_badges_for_user(user):
     # Always return sorted list for stable ordering
     return sorted(list(badges))
 
-# --------------------
-# Routes: core app (unchanged behavior)
-# --------------------
+
 @app.route('/')
 def home():
     username = session.get('username')
@@ -173,7 +154,7 @@ def register():
     # Store optional security question + (hashed?) answer
     if security_question and security_answer:
         users[username]['security_question'] = security_question
-        users[username]['security_answer'] = security_answer  # keep plain for now (you can hash later)
+        users[username]['security_answer'] = security_answer  
 
     save_users()
     session['username'] = username
@@ -184,9 +165,6 @@ def logout():
     session.pop('username', None)
     return redirect(url_for('login'))
 
-# --------------------
-# Submit result: updated to record total_questions and recompute badges (enhanced badge logic)
-# --------------------
 @app.route('/submit_result', methods=['POST'])
 def submit_result():
     if 'username' not in session:
@@ -196,7 +174,7 @@ def submit_result():
     score = data.get('score', 0)
     quiz_title = data.get('quiz_title', '')
     answers = data.get('answers', [])
-    total_questions = data.get('total_questions')  # frontend may provide this; if not, we don't record perfect-related badges
+    total_questions = data.get('total_questions')  
 
     user = users.get(session['username'])
     if user:
@@ -225,9 +203,7 @@ def submit_result():
 
     return jsonify({"error": "User not found"}), 404
 
-# --------------------
-# NEW ROUTE: API for performance charts
-# --------------------
+
 @app.route('/api/performance')
 def get_performance_data():
     username = session.get('username')
@@ -269,8 +245,7 @@ def get_performance_data():
         attempts = quiz_attempts_by_topic.get(topic, 0)
         percentage = (attempts / total_quizzes) * 100 if total_quizzes > 0 else 0
         performance_data['completion'][topic] = round(percentage)
-    
-    # Add scores to the data
+
     performance_data['scores'] = total_scores_by_topic
 
     # Create a simple badge progress tracker (placeholder logic)
